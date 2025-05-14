@@ -1,0 +1,22 @@
+.words-comma {
+  font-family: Georgia, serif;
+}
+
+.hero-section {
+  width: min(100% - 4rem);
+  max-width: 800px;
+  margin-inline: auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-title h1 {
+  font-weight: 600;
+  letter-spacing: -2px;
+  font-size: clamp(24px, 5vw, 52px);
+  line-height: clamp(1.1, 2vw, 1.9);
+  text-align: center;
+}
