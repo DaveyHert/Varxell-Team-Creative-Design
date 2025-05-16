@@ -1,0 +1,39 @@
+.spotlight-words-wrapper {
+  --parentWidth: 0px;
+  display: inline-block;
+  position: relative;
+
+  .spotlight-glass {
+    --glass-offset: 10px;
+    --glass-size: clamp(50px, 7vw, 75px);
+    display: inline-block;
+    width: var(--glass-size);
+    height: var(--glass-size);
+    border-radius: 99px;
+    background: rgba(105, 105, 105, 0.324);
+    backdrop-filter: blur(2px);
+    position: absolute;
+    top: -2px;
+    left: -4px;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: calc(var(--glass-offset) / 2 * -1);
+      left: calc(var(--glass-offset) / 2 * -1);
+      width: calc(var(--glass-size) + var(--glass-offset));
+      height: calc(var(--glass-size) + var(--glass-offset));
+      border-radius: inherit;
+      backdrop-filter: blur(2px);
+      mask: linear-gradient(black, black) content-box,
+        linear-gradient(black, black);
+      background: linear-gradient(
+        0deg,
+        rgba(187, 50, 50, 0),
+        rgba(255, 255, 255, 0.2)
+      );
+      padding: 1px;
+      mask-composite: exclude;
+    }
+  }
+}
