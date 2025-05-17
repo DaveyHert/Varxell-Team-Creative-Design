@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
 
 *,
 *::before,
@@ -11,27 +12,59 @@
 :root {
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-  font-size: 16px;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  --lead-text-color: #fafafade;
+  --main-text-color: #fafafade;
   --subtitle-text-color: #888888;
-
   --text-color: hsla(8, 0%, 63%, 1);
+
+  --lead-text-color: hsla(0, 0%, 93%, 1);
+  --lead-text-size: 2.5rem;
+  --info-text-color: hsla(0, 0%, 63%, 1);
+
+  --page-width: 1440px;
+  --page-padding: 2rem;
 }
 
 body {
   font-family: "Geist", sans-serif;
 }
 
+html {
+  font-size: 16px;
+}
+/* utility classes */
+.wrapper {
+  max-width: var(--page-width);
+  margin-inline: auto;
+  width: min(100% - var(--page-padding));
+  padding: 0 140px;
+
+  @media (max-width: 768px) {
+    padding: 0 16px;
+  }
+}
+
+.lead-text {
+  font-size: var(--lead-text-size);
+  font-weight: 600;
+  color: var(--lead-text-color);
+  line-height: 3.5rem;
+  letter-spacing: -0.08rem;
+}
+
+.info-text {
+  font-size: 1.25rem;
+  line-height: 2rem;
+  color: var(--info-text-color);
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
-    /* background-color: #ffffff; */
   }
 }

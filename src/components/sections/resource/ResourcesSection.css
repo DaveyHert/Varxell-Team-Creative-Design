@@ -1,0 +1,110 @@
+.resources-section {
+  min-height: 800px;
+  padding-bottom: 120px;
+
+  /* resource text content */
+  .resources-info {
+    position: relative;
+    margin-bottom: 30px;
+    z-index: 10;
+
+    .lead-text {
+      margin-bottom: 16px;
+    }
+    .info-text {
+      max-width: 550px;
+    }
+
+    /* resource lines in bg */
+    &:before {
+      position: absolute;
+      content: "";
+      width: 1px;
+      height: 720px;
+      left: -2rem;
+      top: -64px;
+      background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0),
+        #eaeaea 20%,
+        #111111 80%,
+        rgba(0, 0, 0, 0)
+      );
+      filter: brightness(20%);
+      transform: translateY(-100px);
+    }
+
+    &:after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 1px;
+      left: -240px;
+      bottom: -32px;
+      background: linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0),
+        #eaeaea 20%,
+        #111111 80%,
+        rgba(0, 0, 0, 0)
+      );
+      filter: brightness(20%);
+      transform: translateY(90deg);
+    }
+  }
+
+  .resource-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 480px));
+    gap: 20px;
+
+    .card {
+      display: flex;
+      margin-top: 34px;
+      height: 320px;
+      border: 1px solid #333333;
+      border-radius: 20px;
+      background: rgba(22, 22, 22, 0.3);
+      box-shadow: 0 0 0 1px #333333;
+      backdrop-filter: blur(3px);
+      position: relative;
+      overflow: hidden;
+
+      & > svg {
+        position: absolute;
+        inset: 0;
+      }
+
+      .card-content {
+        margin-top: auto;
+        z-index: 10;
+        padding: 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        .card-title {
+          color: rgba(255, 255, 255, 0.87);
+          display: flex;
+          align-items: center;
+          gap: 10px;
+
+          svg {
+            width: 18px;
+          }
+        }
+
+        .card-info {
+          color: var(--text-color);
+          font-size: 1.1rem;
+          line-height: 1.5rem;
+          font-weight: 400;
+        }
+      }
+      .card-wrapper {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}

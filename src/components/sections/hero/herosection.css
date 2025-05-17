@@ -1,23 +1,21 @@
-@import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
-
-.stylish-em-dash {
-  /* font-family: Georgia, serif; */
+/* .stylish-em-dash {
+  font-family: Georgia, serif;
   font-family: "Monoton", sans-serif;
   position: relative;
   top: 5px;
-}
+} */
 
 .hero-section {
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   max-height: 900px;
-  background-image: url(../../assets/ring-star-set.svg);
-  background-image: url(../../assets/stars-set-1.svg);
+
+  background-image: url(../../../assets/ring-star-set.svg);
   background-repeat: no-repeat;
   background-size: auto;
   background-position: center -120px;
   position: relative;
-  overflow: hidden;
+
   /* visually hide noise asset in dom */
   .noise-filter-visually-hidden {
     display: none;
@@ -49,6 +47,7 @@
     z-index: 2;
   }
 }
+
 .hero-content {
   width: min(100% - 4rem);
   max-width: 800px;

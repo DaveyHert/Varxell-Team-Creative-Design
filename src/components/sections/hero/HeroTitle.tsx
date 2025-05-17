@@ -1,4 +1,4 @@
-import SpotlightGlass from "../ui/spotlight-glass/SpotlightGlass";
+import SpotlightGlass from "../../ui/spotlight-glass/SpotlightGlass";
 
 export default function HeroTitle() {
   return (
