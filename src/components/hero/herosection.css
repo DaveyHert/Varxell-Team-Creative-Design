@@ -58,8 +58,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  position: relative;
-  z-index: 0;
 }
 
 .hero-title h1 {
@@ -80,5 +78,5 @@
   margin-bottom: 30px;
   max-width: 40ch;
   position: relative;
-  z-index: 5;
+  z-index: 10;
 }

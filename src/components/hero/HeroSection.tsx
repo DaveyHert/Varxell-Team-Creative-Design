@@ -1,8 +1,8 @@
+import "./herosection.css";
 import HeroTitle from "./HeroTitle";
 import HeroSubtitle from "./HeroSubtitle";
-import NavBar from "../ui/NavBar";
-import "./herosection.css";
 import NoiseFilter from "../../assets/NoiseFilter";
+import Navbar from "../ui/NavBar";
 
 export default function HeroSection() {
   return (
@@ -10,7 +10,7 @@ export default function HeroSection() {
       <div className='hero-content'>
         <HeroTitle />
         <HeroSubtitle />
-        <NavBar />
+        <Navbar />
         <NoiseFilter />
       </div>
     </div>
