@@ -1,4 +1,4 @@
-const SystemIcon = () => {
+const DesignSystemIcon = () => {
   return (
     <svg
       width='48'
@@ -14,4 +14,4 @@ const SystemIcon = () => {
     </svg>
   );
 };
-export default SystemIcon;
+export default DesignSystemIcon;

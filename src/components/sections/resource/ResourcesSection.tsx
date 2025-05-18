@@ -1,6 +1,8 @@
 import "./ResourcesSection.css";
 import VarcellIllustration from "../../../assets/varcellIllustration";
-import Logo from "../../../assets/varxellLogo";
+import DesignIconsSet from "../../../assets/DesignIconsSet";
+import varxellLogo from "../../../assets/VarxellLogo";
+import DesignSystemIcon from "../../../assets/DesignSystemIcon";
 
 const cards = [
   {
@@ -8,21 +10,23 @@ const cards = [
     content:
       "Learn how we build thoughtful systems and refine our brand assets.",
     illustration: VarcellIllustration,
-    icon: Logo,
+    icon: varxellLogo,
   },
   {
     title: "Nimble",
     content:
-      "Our design system for teams who care about details. Consistent. Flexible. Made to grow with you.",
+      "Our design system for those who care about details. Consistent. Flexible. Built to grow with you.",
+    illustration: DesignIconsSet,
+    icon: DesignSystemIcon,
   },
 ];
 function ResourcesSection() {
   return (
     <div className='wrapper'>
-      <div className='resources-section'>
+      <div className='resources-section' id='Resources'>
         <div className='resources-info'>
           <h2 className='lead-text'>
-            We take care of our resources <br /> and tools like plants in a
+            We take care of our resources <br /> & tools like plants in a
             garden.
           </h2>
 
@@ -32,16 +36,20 @@ function ResourcesSection() {
             don’t just build tools — we care for them.
           </p>
         </div>
+
+        {/* card section */}
         <div className='resource-cards'>
           {cards.map((card) => (
             <div className='card' key={card.title}>
-              {card.illustration?.()}
-              <div className='card-content'>
-                <h4 className='card-title'>
-                  {card.icon?.()}
-                  {card.title}
-                </h4>
-                <p className='card-info'>{card.content}</p>
+              <div className='card-wrapper'>
+                {card.illustration?.()}
+                <div className='card-content'>
+                  <h4 className='card-title'>
+                    {card.icon?.()}
+                    {card.title}
+                  </h4>
+                  <p className='card-info'>{card.content}</p>
+                </div>
               </div>
             </div>
           ))}

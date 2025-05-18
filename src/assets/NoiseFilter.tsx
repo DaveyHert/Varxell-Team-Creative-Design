@@ -1,4 +1,4 @@
-const noiseFilter = () => {
+const NoiseFilter = () => {
   return (
     <svg aria-hidden='true' className='noise-filter-visually-hidden'>
       <filter id='noiseFilter'>
@@ -13,4 +13,4 @@ const noiseFilter = () => {
   );
 };
 
-export default noiseFilter;
+export default NoiseFilter;

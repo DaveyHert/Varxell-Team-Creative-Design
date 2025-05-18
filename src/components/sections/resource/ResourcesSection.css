@@ -15,14 +15,15 @@
       max-width: 550px;
     }
 
-    /* resource lines in bg */
+    /* resource bg stripes styles */
+    /* horizontal line */
     &:before {
       position: absolute;
       content: "";
       width: 1px;
       height: 720px;
       left: -2rem;
-      top: -64px;
+      top: -160px;
       background: linear-gradient(
         0deg,
         rgba(0, 0, 0, 0),
@@ -34,6 +35,7 @@
       transform: translateY(-100px);
     }
 
+    /* horizintal line */
     &:after {
       position: absolute;
       content: "";
@@ -53,57 +55,197 @@
     }
   }
 
+  /* card section */
   .resource-cards {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 480px));
     gap: 20px;
+    position: relative;
 
-    .card {
+    /* resource bg stripes below card section */
+    /* horizontal line */
+    &:before {
+      position: absolute;
+      content: "";
+      width: 1px;
+      height: 720px;
+      right: 12.5%;
+      bottom: -350px;
+      background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0),
+        #eaeaea 20%,
+        #111111 80%,
+        rgba(0, 0, 0, 0)
+      );
+      filter: brightness(20%);
+      transform: translateY(-100px);
+      z-index: 1;
+    }
+
+    /* horizintal line */
+    &:after {
+      position: absolute;
+      content: "";
+      width: 200%;
+      height: 1px;
+      right: -80%;
+      bottom: 70px;
+      background: linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0),
+        #eaeaea 20%,
+        #111111 80%,
+        rgba(0, 0, 0, 0)
+      );
+      filter: brightness(20%);
+      transform: translateY(90deg);
+      z-index: 2;
+    }
+  }
+}
+/* card styles */
+.resource-cards .card {
+  margin-top: 34px;
+  height: 320px;
+  border: 1px solid #333333;
+  border-radius: 20px;
+  background: rgba(22, 22, 22, 0.3);
+  box-shadow: 0 0 1px #333333;
+  backdrop-filter: blur(3px);
+  overflow: hidden;
+  position: relative;
+  transition: background 0.25s ease;
+  cursor: pointer;
+  z-index: 10;
+
+  &:hover {
+    background: rgba(22, 22, 22, 0.2);
+  }
+
+  .card-wrapper {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+    /* card illustration bg */
+    & > svg {
+      position: absolute;
+      inset: 0;
+    }
+
+    /* card's content */
+    .card-content {
+      margin-top: auto;
+      padding: 24px;
       display: flex;
-      margin-top: 34px;
-      height: 320px;
-      border: 1px solid #333333;
-      border-radius: 20px;
-      background: rgba(22, 22, 22, 0.3);
-      box-shadow: 0 0 0 1px #333333;
-      backdrop-filter: blur(3px);
-      position: relative;
-      overflow: hidden;
+      flex-direction: column;
+      gap: 5px;
+      z-index: 10;
 
-      & > svg {
-        position: absolute;
-        inset: 0;
-      }
-
-      .card-content {
-        margin-top: auto;
-        z-index: 10;
-        padding: 24px;
+      .card-title {
+        color: rgba(255, 255, 255, 0.87);
         display: flex;
-        flex-direction: column;
-        gap: 8px;
+        align-items: center;
+        gap: 10px;
+        font-weight: 500;
 
-        .card-title {
-          color: rgba(255, 255, 255, 0.87);
-          display: flex;
-          align-items: center;
-          gap: 10px;
-
-          svg {
-            width: 18px;
-          }
-        }
-
-        .card-info {
-          color: var(--text-color);
-          font-size: 1.1rem;
-          line-height: 1.5rem;
-          font-weight: 400;
+        svg {
+          width: 20px;
+          height: 20px;
         }
       }
-      .card-wrapper {
-        width: 100%;
+
+      /* card text content */
+      .card-info {
+        color: var(--text-color);
+        font-size: 1.1rem;
+        line-height: 1.5rem;
+        font-weight: 400;
+      }
+    }
+  }
+
+  /* card hover shine/glow */
+  &::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background: linear-gradient(
+      to right,
+      transparent 20%,
+      #5f5f5f 55%,
+      #6b6b6b 50%,
+      transparent 100%
+    );
+    filter: blur(30px);
+    opacity: 0.18;
+    transform: scale(2) rotate(-45deg) translateX(60%);
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 95%;
+    height: 1px;
+    left: 0;
+    top: 0px;
+    background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0),
+      #333333 10%,
+      #666666 80%,
+      rgba(0, 0, 0, 0)
+    );
+  }
+
+  &:nth-of-type(1):hover::before {
+    transform: scale(2) rotate(-45deg) translateX(-85%);
+    transition: transform 0.5s;
+  }
+
+  /* 2nd card's hover effect */
+  &:nth-of-type(2):before {
+    transform: scale(2) rotate(50deg) translateX(60%);
+  }
+  &:nth-of-type(2):hover::before {
+    transform: scale(2) rotate(50deg) translateX(-85%);
+    transition: transform 0.5s;
+  }
+  &:nth-of-type(2)::after {
+    top: unset;
+    bottom: 0;
+  }
+  /* additional style for second card */
+  &:nth-of-type(2) {
+    .card-wrapper {
+      & > svg {
+        opacity: 0.3;
+        left: unset;
+        right: -2px;
+      }
+
+      /* gradient mask fade at card's left & right edge */
+      &:before,
+      &::after {
+        position: absolute;
+        content: "";
         height: 100%;
+        width: 150px;
+        z-index: 1;
+      }
+
+      &::before {
+        left: 0;
+        background: linear-gradient(270deg, transparent, rgba(15, 15, 15, 0.9));
+      }
+
+      &::after {
+        right: 0;
+        background: linear-gradient(90deg, transparent, rgba(15, 15, 15, 0.9));
       }
     }
   }

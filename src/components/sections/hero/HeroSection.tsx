@@ -1,18 +1,17 @@
 import "./herosection.css";
 import HeroTitle from "./HeroTitle";
 import HeroSubtitle from "./HeroSubtitle";
-import noiseFilter from "../../../assets/noiseFilter";
-
 import Navbar from "../../ui/Navbar";
+import NoiseFilter from "../../../assets/NoiseFilter";
 
 export default function HeroSection() {
   return (
-    <div className='hero-section'>
+    <div className='hero-section' id='Home'>
       <div className='hero-content'>
         <HeroTitle />
         <HeroSubtitle />
         <Navbar />
-        <noiseFilter />
+        <NoiseFilter />
       </div>
     </div>
   );

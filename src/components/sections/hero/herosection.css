@@ -21,6 +21,7 @@
     display: none;
   }
 
+  /* gradient spiral background ring */
   &:before {
     position: absolute;
     content: "";
@@ -35,6 +36,8 @@
     width: 100%;
     top: -180px;
     z-index: 0;
+    max-width: 1800px;
+    margin-inline: auto;
   }
 
   /* nosie filter implementation */
