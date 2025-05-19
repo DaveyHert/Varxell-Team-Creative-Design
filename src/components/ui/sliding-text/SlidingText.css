@@ -1,0 +1,47 @@
+.sliding-text-container {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 42px;
+  max-width: 1500px;
+  margin-inline: auto;
+  position: relative;
+
+  /* fade out at edge of text */
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 5%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background: linear-gradient(to right, #000000 0%, transparent 100%);
+  }
+  &::after {
+    top: 0;
+    left: unset;
+    right: 0;
+    background: linear-gradient(to right, transparent 0%, #000000 100%);
+  }
+
+  /* sliding text */
+  .slider {
+    display: flex;
+    width: max-content;
+
+    .sliding-text {
+      display: inline-block;
+      white-space: nowrap;
+      font-size: 100px;
+      font-weight: 600;
+      line-height: 114px;
+      color: transparent;
+      background: linear-gradient(to right, #333 10%, #111 100%);
+      background-clip: text;
+
+      opacity: 0.4;
+      padding-left: 5rem;
+    }
+  }
+}

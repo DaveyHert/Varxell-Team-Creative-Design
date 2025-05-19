@@ -8,7 +8,7 @@
     margin-bottom: 30px;
     z-index: 10;
 
-    .lead-text {
+    .heading-text {
       margin-bottom: 16px;
     }
     .info-text {
@@ -16,7 +16,7 @@
     }
 
     /* resource bg stripes styles */
-    /* horizontal line */
+    /* vertical line */
     &:before {
       position: absolute;
       content: "";
@@ -63,13 +63,13 @@
     position: relative;
 
     /* resource bg stripes below card section */
-    /* horizontal line */
+    /* vertical line */
     &:before {
       position: absolute;
       content: "";
       width: 1px;
       height: 720px;
-      right: 12.5%;
+      right: 15.5%;
       bottom: -350px;
       background: linear-gradient(
         0deg,
@@ -247,6 +247,36 @@
         right: 0;
         background: linear-gradient(90deg, transparent, rgba(15, 15, 15, 0.9));
       }
+    }
+  }
+}
+
+.resources-stars {
+  position: relative;
+
+  .resources-stars-svg {
+    position: absolute;
+    transform: translateY(-130px);
+  }
+
+  .resources-blob {
+    position: absolute;
+    width: 1000px;
+    height: 1000px;
+    left: 50%;
+    transform: translate(-50%, -240px);
+    background: radial-gradient(
+      circle,
+      rgba(255, 255, 255, 0.1) 0px,
+      rgba(161, 252, 70, 0) 71%
+    );
+    filter: blur(0);
+    opacity: 1;
+    z-index: 0;
+
+    @media (max-width: 600px) {
+      transform: translate(-50%, -340px);
+      opacity: 0.6;
     }
   }
 }

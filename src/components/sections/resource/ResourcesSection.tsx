@@ -1,8 +1,10 @@
 import "./ResourcesSection.css";
-import VarcellIllustration from "../../../assets/varcellIllustration";
+
 import DesignIconsSet from "../../../assets/DesignIconsSet";
 import varxellLogo from "../../../assets/VarxellLogo";
 import DesignSystemIcon from "../../../assets/DesignSystemIcon";
+import ResourceStars from "../../../assets/ResourceStars";
+import VarcellIllustration from "../../../assets/VarcellIllustration";
 
 const cards = [
   {
@@ -25,7 +27,7 @@ function ResourcesSection() {
     <div className='wrapper'>
       <div className='resources-section' id='Resources'>
         <div className='resources-info'>
-          <h2 className='lead-text'>
+          <h2 className='heading-text'>
             We take care of our resources <br /> & tools like plants in a
             garden.
           </h2>
@@ -54,7 +56,10 @@ function ResourcesSection() {
             </div>
           ))}
         </div>
-        <div className='resources-blob'></div>
+        <div className='resources-stars'>
+          <ResourceStars />
+          <div className='resources-blob' aria-hidden='true'></div>
+        </div>
       </div>
     </div>
   );

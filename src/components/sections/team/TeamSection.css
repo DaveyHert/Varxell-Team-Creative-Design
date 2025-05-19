@@ -1,0 +1,57 @@
+.team-section {
+  padding-top: 96px;
+  width: 100%;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 10px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(
+      90deg,
+      rgb(217, 217, 217) -1.53%,
+      rgba(0, 0, 0, 0) -1.52%,
+      rgba(255, 255, 255, 0.5) 72.4706%,
+      rgba(0, 0, 0, 0) 100%
+    );
+    /* background: linear-gradient(
+        90deg,
+        #d9d9d9 -1.53%,
+        rgba(0, 0, 0, 0) -1.52%,
+        rgba(255, 255, 255, 0.5) 78%
+      ),
+      rgba(0, 0, 0, 0) 100%; */
+  }
+
+  .heading-text {
+    color: var(--info-text-color);
+
+    span {
+      color: var(--heading-text-color);
+      background: linear-gradient(to left, #fafafa 50%, #999999 50%);
+      background-size: 200% 100%;
+      background-position-x: 100%;
+      color: rgba(0, 0, 0, 0);
+      background-clip: text;
+      -webkit-background-clip: text;
+      /* color: white; */
+    }
+    svg {
+      position: relative;
+      width: 30px;
+      height: 30px;
+      bottom: -4px;
+    }
+  }
+
+  .info-text {
+    max-width: 550px;
+    margin-top: 16px;
+  }
+}

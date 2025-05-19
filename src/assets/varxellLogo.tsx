@@ -10,7 +10,7 @@ const varxellLogo = () => {
       <path
         d='M26.1592 0.515869L48.0996 39.8879H26.1592V39.9456H0.823242V0.515869H26.1592Z'
         fill='white'
-        fill-opacity='0.91'
+        fillOpacity='0.91'
       />
     </svg>
   );

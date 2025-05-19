@@ -1,4 +1,4 @@
-const varcellIllustration = () => {
+const VarcellIllustration = () => {
   return (
     <svg
       width='481'
@@ -13,9 +13,9 @@ const varcellIllustration = () => {
         x2='0.714101'
         y2='117.354'
         stroke='url(#paint0_linear_268_143)'
-        stroke-opacity='0.6'
-        stroke-linecap='round'
-        stroke-dasharray='6.2 6.2'
+        strokeOpacity='0.6'
+        strokeLinecap='round'
+        strokeDasharray='6.2 6.2'
       />
       <line
         x1='479.714'
@@ -23,9 +23,9 @@ const varcellIllustration = () => {
         x2='0.714101'
         y2='130.82'
         stroke='url(#paint1_linear_268_143)'
-        stroke-opacity='0.7'
-        stroke-linecap='round'
-        stroke-dasharray='6.2 6.2'
+        strokeOpacity='0.7'
+        strokeLinecap='round'
+        strokeDasharray='6.2 6.2'
       />
       <line
         x1='479.714'
@@ -33,9 +33,9 @@ const varcellIllustration = () => {
         x2='0.714101'
         y2='144.287'
         stroke='url(#paint2_linear_268_143)'
-        stroke-opacity='0.7'
-        stroke-linecap='round'
-        stroke-dasharray='6.2 6.2'
+        strokeOpacity='0.7'
+        strokeLinecap='round'
+        strokeDasharray='6.2 6.2'
       />
       <line
         x1='479.714'
@@ -43,9 +43,9 @@ const varcellIllustration = () => {
         x2='0.714101'
         y2='157.753'
         stroke='url(#paint3_linear_268_143)'
-        stroke-opacity='0.6'
-        stroke-linecap='round'
-        stroke-dasharray='6.2 6.2'
+        strokeOpacity='0.6'
+        strokeLinecap='round'
+        strokeDasharray='6.2 6.2'
       />
       <line
         x1='479.714'
@@ -53,9 +53,9 @@ const varcellIllustration = () => {
         x2='0.714101'
         y2='294.05'
         stroke='url(#paint4_linear_268_143)'
-        stroke-opacity='0.6'
-        stroke-linecap='round'
-        stroke-dasharray='6.2 6.2'
+        strokeOpacity='0.6'
+        strokeLinecap='round'
+        strokeDasharray='6.2 6.2'
       />
       <line
         x1='48.4766'
@@ -63,9 +63,9 @@ const varcellIllustration = () => {
         x2='45.1817'
         y2='2.73584'
         stroke='url(#paint5_linear_268_143)'
-        stroke-opacity='0.6'
-        stroke-linecap='round'
-        stroke-dasharray='6.2 6.2'
+        strokeOpacity='0.6'
+        strokeLinecap='round'
+        strokeDasharray='6.2 6.2'
       />
       <line
         x1='183.532'
@@ -73,9 +73,9 @@ const varcellIllustration = () => {
         x2='7.20735'
         y2='3.40694'
         stroke='url(#paint6_radial_268_143)'
-        stroke-opacity='0.83'
-        stroke-linecap='round'
-        stroke-dasharray='6.2 6.2'
+        strokeOpacity='0.83'
+        strokeLinecap='round'
+        strokeDasharray='6.2 6.2'
       />
       <line
         x1='204.983'
@@ -83,9 +83,9 @@ const varcellIllustration = () => {
         x2='35.1642'
         y2='0.969472'
         stroke='url(#paint7_radial_268_143)'
-        stroke-opacity='0.83'
-        stroke-linecap='round'
-        stroke-dasharray='6.2 6.2'
+        strokeOpacity='0.83'
+        strokeLinecap='round'
+        strokeDasharray='6.2 6.2'
       />
       <line
         x1='284.148'
@@ -93,9 +93,9 @@ const varcellIllustration = () => {
         x2='284.148'
         y2='2.57449'
         stroke='url(#paint8_radial_268_143)'
-        stroke-opacity='0.5'
-        stroke-linecap='round'
-        stroke-dasharray='6.2 6.2'
+        strokeOpacity='0.5'
+        strokeLinecap='round'
+        strokeDasharray='6.2 6.2'
       />
       <line
         x1='270.527'
@@ -103,9 +103,9 @@ const varcellIllustration = () => {
         x2='270.527'
         y2='2.57449'
         stroke='url(#paint9_radial_268_143)'
-        stroke-opacity='0.5'
-        stroke-linecap='round'
-        stroke-dasharray='6.2 6.2'
+        strokeOpacity='0.5'
+        strokeLinecap='round'
+        strokeDasharray='6.2 6.2'
       />
       <path
         d='M71.8662 119.653L93.8066 159.025H71.8662V159.083H46.5303V119.653H71.8662Z'
@@ -132,8 +132,8 @@ const varcellIllustration = () => {
           y2='118.303'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='#2E2E2E' />
-          <stop offset='0.7' stop-color='#2E2E2E' />
+          <stop stopColor='#2E2E2E' />
+          <stop offset='0.7' stopColor='#2E2E2E' />
           <stop offset='1' />
         </linearGradient>
         <linearGradient
@@ -144,8 +144,8 @@ const varcellIllustration = () => {
           y2='131.769'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='#2E2E2E' />
-          <stop offset='0.7' stop-color='#2E2E2E' />
+          <stop stopColor='#2E2E2E' />
+          <stop offset='0.7' stopColor='#2E2E2E' />
           <stop offset='1' />
         </linearGradient>
         <linearGradient
@@ -156,8 +156,8 @@ const varcellIllustration = () => {
           y2='145.236'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='#2E2E2E' />
-          <stop offset='0.7' stop-color='#2E2E2E' />
+          <stop stopColor='#2E2E2E' />
+          <stop offset='0.7' stopColor='#2E2E2E' />
           <stop offset='1' />
         </linearGradient>
         <linearGradient
@@ -168,8 +168,8 @@ const varcellIllustration = () => {
           y2='158.702'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='#2E2E2E' />
-          <stop offset='0.7' stop-color='#2E2E2E' />
+          <stop stopColor='#2E2E2E' />
+          <stop offset='0.7' stopColor='#2E2E2E' />
           <stop offset='1' />
         </linearGradient>
         <linearGradient
@@ -180,8 +180,8 @@ const varcellIllustration = () => {
           y2='293.048'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='#2E2E2E' stop-opacity='0.45' />
-          <stop offset='0.59' stop-color='#2E2E2E' />
+          <stop stopColor='#2E2E2E' stopOpacity='0.45' />
+          <stop offset='0.59' stopColor='#2E2E2E' />
           <stop offset='1' />
         </linearGradient>
         <linearGradient
@@ -192,8 +192,8 @@ const varcellIllustration = () => {
           y2='2.22554'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='#2E2E2E' stop-opacity='0.3' />
-          <stop offset='0.59' stop-color='#2E2E2E' />
+          <stop stopColor='#2E2E2E' stopOpacity='0.3' />
+          <stop offset='0.59' stopColor='#2E2E2E' />
           <stop offset='1' />
         </linearGradient>
         <radialGradient
@@ -204,9 +204,9 @@ const varcellIllustration = () => {
           gradientUnits='userSpaceOnUse'
           gradientTransform='translate(184.212 320.719) rotate(-119.075) scale(363.842 132381)'
         >
-          <stop stop-color='#2E2E2E' />
-          <stop offset='0.5' stop-color='#2E2E2E' />
-          <stop offset='0.942308' stop-color='#2E2E2E' stop-opacity='0.3' />
+          <stop stopColor='#2E2E2E' />
+          <stop offset='0.5' stopColor='#2E2E2E' />
+          <stop offset='0.942308' stopColor='#2E2E2E' stopOpacity='0.3' />
         </radialGradient>
         <radialGradient
           id='paint7_radial_268_143'
@@ -216,9 +216,9 @@ const varcellIllustration = () => {
           gradientUnits='userSpaceOnUse'
           gradientTransform='translate(205.659 321.24) rotate(-117.95) scale(363.325 132381)'
         >
-          <stop stop-color='#2E2E2E' />
-          <stop offset='0.5' stop-color='#2E2E2E' />
-          <stop offset='0.942308' stop-color='#2E2E2E' stop-opacity='0.3' />
+          <stop stopColor='#2E2E2E' />
+          <stop offset='0.5' stopColor='#2E2E2E' />
+          <stop offset='0.942308' stopColor='#2E2E2E' stopOpacity='0.3' />
         </radialGradient>
         <radialGradient
           id='paint8_radial_268_143'
@@ -228,9 +228,9 @@ const varcellIllustration = () => {
           gradientUnits='userSpaceOnUse'
           gradientTransform='translate(284.648 2.07447) rotate(89.9105) scale(320.017 1)'
         >
-          <stop stop-color='#2E2E2E' />
-          <stop offset='0.710189' stop-color='#2E2E2E' />
-          <stop offset='1' stop-color='#2E2E2E' />
+          <stop stopColor='#2E2E2E' />
+          <stop offset='0.710189' stopColor='#2E2E2E' />
+          <stop offset='1' stopColor='#2E2E2E' />
         </radialGradient>
         <radialGradient
           id='paint9_radial_268_143'
@@ -240,9 +240,9 @@ const varcellIllustration = () => {
           gradientUnits='userSpaceOnUse'
           gradientTransform='translate(271.027 322.092) rotate(-89.9105) scale(320.017 1)'
         >
-          <stop stop-color='#2E2E2E' />
-          <stop offset='0.59' stop-color='#2E2E2E' />
-          <stop offset='1' stop-color='#2E2E2E' />
+          <stop stopColor='#2E2E2E' />
+          <stop offset='0.59' stopColor='#2E2E2E' />
+          <stop offset='1' stopColor='#2E2E2E' />
         </radialGradient>
         <radialGradient
           id='paint10_radial_268_143'
@@ -252,8 +252,8 @@ const varcellIllustration = () => {
           gradientUnits='userSpaceOnUse'
           gradientTransform='translate(70.1685 139.368) rotate(0.664226) scale(23.7088 67.3031)'
         >
-          <stop stop-color='#ECECEC' />
-          <stop offset='1' stop-color='#A0A0A0' />
+          <stop stopColor='#ECECEC' />
+          <stop offset='1' stopColor='#A0A0A0' />
         </radialGradient>
         <radialGradient
           id='paint11_radial_268_143'
@@ -263,8 +263,8 @@ const varcellIllustration = () => {
           gradientUnits='userSpaceOnUse'
           gradientTransform='translate(120.488 139.368) rotate(0.671171) scale(23.4639 67.3041)'
         >
-          <stop stop-color='#ECECEC' />
-          <stop offset='1' stop-color='#A0A0A0' />
+          <stop stopColor='#ECECEC' />
+          <stop offset='1' stopColor='#A0A0A0' />
         </radialGradient>
         <radialGradient
           id='paint12_radial_268_143'
@@ -274,8 +274,8 @@ const varcellIllustration = () => {
           gradientUnits='userSpaceOnUse'
           gradientTransform='translate(216.19 135.493) rotate(0.232798) scale(80.9425 80.5377)'
         >
-          <stop stop-color='#ECECEC' />
-          <stop offset='1' stop-color='#A0A0A0' />
+          <stop stopColor='#ECECEC' />
+          <stop offset='1' stopColor='#A0A0A0' />
         </radialGradient>
         <radialGradient
           id='paint13_radial_268_143'
@@ -285,11 +285,11 @@ const varcellIllustration = () => {
           gradientUnits='userSpaceOnUse'
           gradientTransform='translate(273.864 137.813) rotate(1.1708) scale(13.7072 68.574)'
         >
-          <stop stop-color='#ECECEC' />
-          <stop offset='1' stop-color='#A0A0A0' />
+          <stop stopColor='#ECECEC' />
+          <stop offset='1' stopColor='#A0A0A0' />
         </radialGradient>
       </defs>
     </svg>
   );
 };
-export default varcellIllustration;
+export default VarcellIllustration;

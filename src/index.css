@@ -22,8 +22,9 @@
   --subtitle-text-color: #888888;
   --text-color: hsla(8, 0%, 63%, 1);
 
-  --lead-text-color: hsla(0, 0%, 93%, 1);
-  --lead-text-size: 2.5rem;
+  --heading-text-color: hsla(0, 0%, 93%, 1);
+
+  --heading-text-size: 2.5rem;
   --info-text-color: hsla(0, 0%, 63%, 1);
 
   --page-width: 1440px;
@@ -32,28 +33,34 @@
 
 body {
   font-family: "Geist", sans-serif;
+
+  &::selection {
+    background: #0059ec;
+    color: #ffffff;
+  }
 }
 
 html {
   font-size: 16px;
   scroll-behavior: smooth;
 }
+
 /* utility classes */
 .wrapper {
   max-width: var(--page-width);
   margin-inline: auto;
   width: min(100% - var(--page-padding));
-  padding: 0 140px;
+  padding: 0 120px;
 
   @media (max-width: 768px) {
     padding: 0 16px;
   }
 }
 
-.lead-text {
-  font-size: var(--lead-text-size);
+.heading-text {
+  font-size: var(--heading-text-size);
   font-weight: 600;
-  color: var(--lead-text-color);
+  color: var(--heading-text-color);
   line-height: 3.5rem;
   letter-spacing: -0.08rem;
 }
