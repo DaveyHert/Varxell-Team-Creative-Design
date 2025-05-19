@@ -23,7 +23,7 @@
       width: 1px;
       height: 720px;
       left: -2rem;
-      top: -160px;
+      top: -40px;
       background: linear-gradient(
         0deg,
         rgba(0, 0, 0, 0),
@@ -87,7 +87,7 @@
     &:after {
       position: absolute;
       content: "";
-      width: 200%;
+      width: 215%;
       height: 1px;
       right: -80%;
       bottom: 70px;
@@ -104,6 +104,7 @@
     }
   }
 }
+
 /* card styles */
 .resource-cards .card {
   margin-top: 34px;

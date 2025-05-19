@@ -1,14 +1,16 @@
 import SlidingText from "../../ui/sliding-text/SlidingText";
 import "./TeamSection.css";
-
 import GlobeIcon from "../../../assets/GlobeIcon";
 
-const slidingText = `Hello. Hola. Hallo. Hei. Haye. Hoi. Halo. Bonjour. Ciao. Konnichiwa. Olá. Nǐ hǎo. Ahoj. Kumusta. Tere. Buna. Yassas. Sannu. Helo. Aloha. Bula. Halló. Kia ora. Ave. Kamusta.`;
+import { sliderTextContent, teamMembers } from "../../../data/data";
+import ProfileCard from "./ProfileCard";
+import React from "react";
+console.log(teamMembers);
 
 function TeamSection() {
   return (
     <div className='team-section'>
-      <SlidingText>{slidingText}</SlidingText>
+      <SlidingText>{sliderTextContent}</SlidingText>
       <div className='wrapper'>
         <h2 className='heading-text'>
           We’re a global <span>team,</span>
@@ -24,6 +26,13 @@ function TeamSection() {
           contributes a unique perspective, enriching our projects with depth
           and creative flair.
         </p>
+      </div>
+      <div className='team-members-container'>
+        {teamMembers.map((profile) => (
+          <React.Fragment key={profile.name}>
+            <ProfileCard profile={profile} />
+          </React.Fragment>
+        ))}
       </div>
     </div>
   );
