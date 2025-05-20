@@ -76,3 +76,29 @@ html {
     color: #213547;
   }
 }
+
+/* WebKit Browsers (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-track {
+  background-color: #2e2e2e;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #5c5c5c;
+  border-radius: 6px;
+  border: 2px solid #2e2e2e;
+}
+::-webkit-scrollbar-thumb:hover,
+::-webkit-scrollbar-thumb:active {
+  background-color: #7d7d7d;
+}
+
+/* Firefox only - Chrome/Edge/Safari will skip it altogether */
+@supports (-moz-appearance: none) {
+  /* fix hover bug on chrome style getting overide*/
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #5c5c5c #2e2e2e;
+  }
+}

@@ -27,7 +27,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 16px;
+      font-size: 14px;
       font-weight: 500;
       border-radius: inherit;
       z-index: 10;
@@ -39,6 +39,7 @@
         text-shadow: 1px 1px 12px rgba(255, 255, 255, 0.4);
       }
     }
+
     .active-link {
       display: inline-block;
       background: rgba(255, 255, 255, 0.08);

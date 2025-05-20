@@ -1,0 +1,26 @@
+.careers-section {
+  min-height: 602px;
+  background-image: linear-gradient(#262626 1px, transparent 1px),
+    linear-gradient(to right, #262626 1px, transparent 1px);
+  background-size: 100px 100px;
+  position: relative;
+
+  &:before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: "";
+    inset: 0;
+    opacity: 0.45;
+    background-image: linear-gradient(
+        #ffffff14 0.6000000000000001px,
+        transparent 0.6000000000000001px
+      ),
+      linear-gradient(
+        to right,
+        #ffffff14 0.6000000000000001px,
+        transparent 0.6000000000000001px
+      );
+    background-size: 10px 10px;
+  }
+}

@@ -20,9 +20,6 @@ import avatar19 from "../assets/img/avatar-19.jpg";
 import avatar20 from "../assets/img/avatar-20.jpg";
 import avatar21 from "../assets/img/avatar-21.jpg";
 import avatar22 from "../assets/img/avatar-22.jpg";
-import avatar23 from "../assets/img/avatar-23.jpg";
-import avatar24 from "../assets/img/avatar-24.jpg";
-import avatar25 from "../assets/img/avatar-25.jpg";
 
 export const teamMembers = [
   {
@@ -30,8 +27,16 @@ export const teamMembers = [
     name: "Alex Johnson",
     xHandle: "@alexj_design",
     country: "USA",
-    role: "Brand Designer",
+    role: "VP of Designer",
   },
+  {
+    avatar: avatar19,
+    name: "Chadxn",
+    xHandle: "@chadxn_ui",
+    country: "Sweden",
+    role: "Design Engineer",
+  },
+
   {
     avatar: avatar2,
     name: "Maria Gonzalez",
@@ -39,13 +44,53 @@ export const teamMembers = [
     country: "Spain",
     role: "UX Engineer",
   },
+
   {
     avatar: avatar3,
-    name: "Liam Chen",
+    name: "Liam Brown",
     xHandle: "@liam_codes",
     country: "Canada",
     role: "Product Designer",
   },
+  {
+    avatar: avatar12,
+    name: "Harry Smith",
+    xHandle: "@harrysmith ",
+    country: "UK",
+    role: "Design Engineer",
+  },
+
+  {
+    avatar: avatar5,
+    name: "Chloe Brooks ",
+    xHandle: "@chloe_int",
+    country: "Australia",
+    role: "Interaction Designer",
+  },
+
+  {
+    avatar: avatar17,
+    name: "Timi Odanz",
+    xHandle: "@timidanz",
+    country: "Nigeria",
+    role: "Front-end Engineer",
+  },
+  {
+    avatar: avatar15,
+    name: "Henry Heffernan",
+    xHandle: "@henryheffernan",
+    country: "USA",
+    role: "Design Engineer",
+  },
+
+  {
+    avatar: avatar11,
+    name: "Sofia Lin ",
+    xHandle: "@so.fi.lin",
+    country: "UK",
+    role: "Design Engineer",
+  },
+
   {
     avatar: avatar4,
     name: "Aisha Khan",
@@ -54,32 +99,54 @@ export const teamMembers = [
     role: "Visual Designer",
   },
   {
-    avatar: avatar5,
-    name: "Tomoko Sato",
-    xHandle: "@tomoko_interact",
-    country: "Japan",
-    role: "Interaction Designer",
-  },
-  {
-    avatar: avatar6,
-    name: "Carlos Mendes",
-    xHandle: "@carlos_dev",
-    country: "Brazil",
-    role: "Front-end Engineer",
-  },
-  {
-    avatar: avatar7,
-    name: "Sophie Dubois",
-    xHandle: "@sophie_ui",
-    country: "France",
-    role: "UI Designer",
+    avatar: avatar20,
+    name: "Mikhail Fischer ",
+    xHandle: "@mikhail",
+    country: "Germany",
+    role: "CTO",
   },
   {
     avatar: avatar8,
-    name: "Daniel Müller",
+    name: "Daniel Adeyemi",
     xHandle: "@danielux",
     country: "Germany",
     role: "UX Researcher",
+  },
+
+  {
+    avatar: avatar6,
+    name: "Chris Licorn",
+    xHandle: "@skilcrn",
+    country: "Norway",
+    role: "Product Designer",
+  },
+  {
+    avatar: avatar13,
+    name: "Noah Weber",
+    xHandle: "@ahmed_ui",
+    country: "Germany",
+    role: "Product Manager",
+  },
+  {
+    avatar: avatar7,
+    name: "Benjamin Martin",
+    xHandle: "@benjaminmartin",
+    country: "Nigeria",
+    role: "UI Designer",
+  },
+  {
+    avatar: avatar16,
+    name: "Scott Lee",
+    xHandle: "@scottux",
+    country: "USA",
+    role: "UX Designer",
+  },
+  {
+    avatar: avatar10,
+    name: "Olivia Marti",
+    xHandle: "@ravi_uiux",
+    country: "USA",
+    role: "Product Engineer",
   },
   {
     avatar: avatar9,
@@ -89,33 +156,13 @@ export const teamMembers = [
     role: "Full-stack Developer",
   },
   {
-    avatar: avatar10,
-    name: "Ravi Patel",
-    xHandle: "@ravi_uiux",
-    country: "India",
-    role: "Product Engineer",
+    avatar: avatar21,
+    name: "Mason Brooks",
+    xHandle: "@masonbrooks",
+    country: "Portugal",
+    role: "Back-end Engineer",
   },
-  {
-    avatar: avatar11,
-    name: "Chen Wei",
-    xHandle: "@chen_designs",
-    country: "China",
-    role: "Graphic Designer",
-  },
-  {
-    avatar: avatar12,
-    name: "Isabella Rossi",
-    xHandle: "@isabella_dev",
-    country: "Italy",
-    role: "Back-end Developer",
-  },
-  {
-    avatar: avatar13,
-    name: "Ahmed Ali",
-    xHandle: "@ahmed_ui",
-    country: "Egypt",
-    role: "UI Engineer",
-  },
+
   {
     avatar: avatar14,
     name: "Nina Petrova",
@@ -123,82 +170,20 @@ export const teamMembers = [
     country: "Russia",
     role: "Creative Director",
   },
+
   {
-    avatar: avatar15,
-    name: "Lucas Martin",
-    xHandle: "@lucas_codes",
-    country: "Argentina",
+    avatar: avatar22,
+    name: "Jacob Ibrahim",
+    xHandle: "@jacob_codes",
+    country: "Nigeria",
     role: "Software Engineer",
   },
   {
-    avatar: avatar16,
-    name: "Hannah Lee",
-    xHandle: "@hannah_uiux",
-    country: "South Korea",
-    role: "UX Designer",
-  },
-  {
-    avatar: avatar17,
-    name: "George Brown",
-    xHandle: "@george_dev",
-    country: "Australia",
-    role: "Front-end Developer",
-  },
-  {
     avatar: avatar18,
-    name: "Fatima Noor",
-    xHandle: "@fatima_designs",
-    country: "Pakistan",
-    role: "Visual Designer",
-  },
-  {
-    avatar: avatar19,
-    name: "Johan Svensson",
-    xHandle: "@johan_ui",
-    country: "Sweden",
-    role: "UI Engineer",
-  },
-  {
-    avatar: avatar20,
-    name: "Chloe Nguyen",
-    xHandle: "@chloe_codes",
-    country: "Vietnam",
-    role: "Full-stack Developer",
-  },
-  {
-    avatar: avatar21,
-    name: "Pedro Silva",
-    xHandle: "@pedro_dev",
-    country: "Portugal",
-    role: "Back-end Engineer",
-  },
-  {
-    avatar: avatar22,
-    name: "Sara Ibrahim",
-    xHandle: "@sara_uiux",
-    country: "Nigeria",
-    role: "UX Researcher",
-  },
-  {
-    avatar: avatar23,
-    name: "Mikhail Ivanov",
-    xHandle: "@mikhail_designs",
-    country: "Russia",
-    role: "Graphic Designer",
-  },
-  {
-    avatar: avatar24,
     name: "Linda Berg",
     xHandle: "@linda_creates",
     country: "Norway",
     role: "Creative Director",
-  },
-  {
-    avatar: avatar25,
-    name: "Omar Hassan",
-    xHandle: "@omar_dev",
-    country: "Saudi Arabia",
-    role: "Software Engineer",
   },
 ];
 

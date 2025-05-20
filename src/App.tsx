@@ -1,4 +1,5 @@
 import "./App.css";
+import CareersSection from "./components/sections/careers/CareersSection";
 import HeroSection from "./components/sections/hero/HeroSection";
 import ResourcesSection from "./components/sections/resource/ResourcesSection";
 import TeamSection from "./components/sections/team/TeamSection";
@@ -9,6 +10,7 @@ function App() {
       <HeroSection />
       <ResourcesSection />
       <TeamSection />
+      <CareersSection />
       <div className='section' style={{ height: "100vh" }}></div>
     </div>
   );

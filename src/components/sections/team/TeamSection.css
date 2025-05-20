@@ -5,6 +5,7 @@
   background: rgba(0, 0, 0, 0.1);
   position: relative;
   z-index: 10px;
+  margin-bottom: 150px;
 
   &::before {
     content: "";
@@ -46,5 +47,13 @@
   .info-text {
     max-width: 550px;
     margin-top: 16px;
+  }
+
+  .team-members-container {
+    margin-top: 64px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 24px;
   }
 }
