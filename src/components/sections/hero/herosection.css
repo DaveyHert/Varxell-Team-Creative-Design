@@ -1,15 +1,7 @@
-/* .stylish-em-dash {
-  font-family: Georgia, serif;
-  font-family: "Monoton", sans-serif;
-  position: relative;
-  top: 5px;
-} */
-
 .hero-section {
   height: 100vh;
   width: 100vw;
   max-height: 900px;
-
   background-image: url(../../../assets/ring-star-set.svg);
   background-repeat: no-repeat;
   background-size: auto;

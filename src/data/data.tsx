@@ -70,14 +70,14 @@ export const teamMembers = [
 
   {
     avatar: avatar17,
-    name: "Timi Odanz",
+    name: "Timi Odanz",
     xHandle: "@timidanz",
     country: "Nigeria",
     role: "Front-end Engineer",
   },
   {
     avatar: avatar15,
-    name: "Henry Heffernan",
+    name: "Henry Heffernan",
     xHandle: "@henryheffernan",
     country: "USA",
     role: "Design Engineer",

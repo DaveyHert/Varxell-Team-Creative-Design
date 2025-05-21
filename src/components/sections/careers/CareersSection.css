@@ -1,11 +1,13 @@
 .careers-section {
-  min-height: 602px;
+  width: 100vw;
   background-image: linear-gradient(#262626 1px, transparent 1px),
     linear-gradient(to right, #262626 1px, transparent 1px);
   background-size: 100px 100px;
   position: relative;
+  overflow: hidden;
 
-  &:before {
+  /* inner bg mat box pattern */
+  &::before {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -22,5 +24,84 @@
         transparent 0.6000000000000001px
       );
     background-size: 10px 10px;
+  }
+
+  /* dark circular mask over bg */
+  &::after {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: radial-gradient(circle, rgba(0, 0, 0, 0) 0, #000 100%);
+  }
+
+  /* content container style */
+  .careers-content {
+    min-height: 602px;
+    position: relative;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+      background: red;
+      width: 100%;
+      height: 35%;
+    }
+    &::before {
+      top: 0;
+      left: 0;
+      background: linear-gradient(180deg, #000, transparent);
+    }
+    &::after {
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(0deg, #000, transparent);
+    }
+    /* content style */
+    .join-us {
+      max-width: 55ch;
+      width: 100%;
+      text-align: center;
+      position: relative;
+      z-index: 11;
+
+      .heading-text {
+        margin-bottom: 15px;
+      }
+
+      @media (max-width: 768px) {
+        padding: 0 16px;
+      }
+    }
+  }
+
+  .dark-radial-gradient {
+    /* spotlight radial lighting */
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(
+        50% 50% at 50% 50%,
+        #fff 0,
+        rgba(255, 255, 255, 0) 100%
+      );
+      transform: rotate(-45deg);
+      opacity: 0.08;
+      z-index: 0;
+    }
   }
 }

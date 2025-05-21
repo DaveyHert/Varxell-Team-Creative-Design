@@ -43,6 +43,7 @@ body {
 html {
   font-size: 16px;
   scroll-behavior: smooth;
+  scroll-padding-top: 50px;
 }
 
 /* utility classes */
@@ -54,6 +55,67 @@ html {
 
   @media (max-width: 768px) {
     padding: 0 16px;
+  }
+}
+
+.btn {
+  text-decoration: none;
+  display: inline-block;
+  color: #111111;
+  background: linear-gradient(45deg, #c2c2c2, #fff);
+  border: none;
+  padding: 9px 16px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 99px;
+  margin-inline: auto;
+  margin-top: 25px;
+  z-index: 10;
+  position: relative;
+  cursor: pointer;
+  width: max-content;
+  user-select: none;
+  overflow: hidden;
+
+  svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  &:active {
+    transform: scale(0.98);
+  }
+  &:hover {
+    box-shadow: 0 0 20px 0 rgba(240, 240, 240, 0.245);
+    transition: box-shadow 0.2s ease;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(
+      to right,
+      transparent 20%,
+      transparent 40%,
+      #fafafa 50%,
+      #fafafa 55%,
+      transparent 70%,
+      transparent 100%
+    );
+    transform: scale(3) rotate(45deg);
+    background-size: 200% auto;
+  }
+
+  &:hover::before {
+    background-position: 200%;
+    transition: background 1.5s ease, opacity 0.85s ease;
   }
 }
 

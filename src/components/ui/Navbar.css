@@ -1,8 +1,12 @@
+.sentinel-nav-trigger {
+  height: 1px;
+}
+
 .navbar {
   border: 1px solid #333;
   border-radius: 99px;
   position: relative;
-  z-index: 10;
+  z-index: 999;
   overflow: hidden;
 }
 
@@ -12,7 +16,7 @@
   display: flex;
   align-items: center;
   gap: 20px;
-  padding: 5px;
+  padding: 4px;
 
   .nav-link {
     position: relative;
@@ -23,7 +27,7 @@
       color: #888888;
       background: transparent;
       border: none;
-      padding: 10px 20px;
+      padding: 8px 20px;
       display: flex;
       align-items: center;
       justify-content: center;

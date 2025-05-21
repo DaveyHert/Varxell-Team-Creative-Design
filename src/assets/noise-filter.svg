@@ -1,0 +1,10 @@
+    <svg width="0" height="0" style="position: absolute">
+      <filter id="noiseFilter">
+        <feTurbulence
+          type="fractalNoise"
+          baseFrequency="0.8"
+          numOctaves="4"
+          stitchTiles="stitch"
+        />
+      </filter>
+    </svg>

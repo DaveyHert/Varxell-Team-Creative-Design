@@ -11,7 +11,9 @@ function App() {
       <ResourcesSection />
       <TeamSection />
       <CareersSection />
-      <div className='section' style={{ height: "100vh" }}></div>
+      <div className='footer' style={{ height: "15vh" }}>
+        footer
+      </div>
     </div>
   );
 }

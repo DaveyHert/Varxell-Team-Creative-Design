@@ -12,9 +12,7 @@ const SlidingText = ({ children }: SlidingTextProp) => {
   const isInView = useInView(scoped);
 
   useEffect(() => {
-    console.log(scoped);
     if (isInView) {
-      console.log("It's in view");
       animate(
         textRef.current,
         { x: ["0", "-100%"] },

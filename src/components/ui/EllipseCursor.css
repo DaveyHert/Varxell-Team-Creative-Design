@@ -1,0 +1,54 @@
+.ellipse-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.cursor-badge {
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.badge-content {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.badge-text {
+  padding: 2px 5px;
+  background-color: #ff4081;
+  color: white;
+  font-size: 13px;
+  font-weight: 500;
+  border-radius: 6px;
+  white-space: nowrap;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 1;
+}
+
+/* Common cursor styling */
+.cursor-icon-absolute {
+  position: absolute;
+  color: white;
+  z-index: 2;
+}
+
+/* Cursor placement above top-right corner (for left side badges) */
+.cursor-icon-absolute.left-side {
+  top: -18px;
+  right: -18px;
+  transform: rotate(-45deg);
+}
+
+/* Cursor placement above top-left corner (for right side badges) */
+.cursor-icon-absolute.right-side {
+  top: -18px;
+  left: -18px;
+  transform: rotate(-135deg);
+}
