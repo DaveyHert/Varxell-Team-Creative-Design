@@ -1,30 +1,24 @@
+import { useRef, useState } from "react";
+import usePinOnScroll from "@hooks/usePinOnScroll";
 import { motion } from "motion/react";
 import "./Navbar.css";
-import { useEffect, useRef, useState } from "react";
 
 const navLinks = ["Home", "Resources", "People", "Career"];
+
 const options = {
   rootMargin: "-20px",
   threshold: 0,
 };
+
 function NavBar() {
-  const [isFixed, setIsFixed] = useState(false);
   const sentinelRef = useRef<HTMLDivElement | null>(null);
   const navRef = useRef<HTMLDivElement | null>(null);
   const [activeLink, setActiveLink] = useState(navLinks[0]);
+  const isPinned = usePinOnScroll(sentinelRef, options);
 
   const handleNavSelect = (navlink: string) => {
     setActiveLink(navlink);
   };
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(([entry]) => {
-      setIsFixed(!entry.isIntersecting);
-    }, options);
-    if (sentinelRef.current) observer.observe(sentinelRef.current);
-
-    return () => observer.disconnect(); //cleanup
-  }, []);
 
   return (
     <>
@@ -40,8 +34,8 @@ function NavBar() {
         className='navbar'
         ref={navRef}
         style={{
-          position: isFixed ? "fixed" : "relative",
-          top: isFixed ? "20px" : "initial",
+          position: isPinned ? "fixed" : "relative",
+          top: isPinned ? "20px" : "initial",
         }}
       >
         <ul className='navlist'>
@@ -63,8 +57,8 @@ function NavBar() {
         </ul>
       </nav>
 
-      {/* Spacer to prevent layout jump - pseudo navbar placeholder*/}
-      {isFixed && (
+      {/* Spacer to prevent layout jump when nav is removed from  - pseudo navbar placeholder*/}
+      {isPinned && (
         <div
           aria-hidden='true'
           style={{
