@@ -1,8 +1,8 @@
 import "./herosection.css";
 import HeroTitle from "./HeroTitle";
 import HeroSubtitle from "./HeroSubtitle";
-import Navbar from "../../ui/Navbar";
-import NoiseFilter from "../../../assets/NoiseFilter";
+import Navbar from "@components/ui/Navbar";
+import NoiseFilter from "@assets/NoiseFilter";
 
 export default function HeroSection() {
   return (
