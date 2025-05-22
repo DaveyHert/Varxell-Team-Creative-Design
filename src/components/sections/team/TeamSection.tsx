@@ -1,15 +1,16 @@
-import SlidingText from "../../ui/sliding-text/SlidingText";
-import "./TeamSection.css";
-import GlobeIcon from "../../../assets/GlobeIcon";
-import { sliderTextContent, teamMembers } from "../../../data/data";
-import ProfileCard from "./ProfileCard";
 import React, { useRef } from "react";
-import { useMouseGlowEffect } from "../../../hooks/useMouseGlowEffect";
+import "./TeamSection.css";
+
+import { useMouseGlowEffect } from "@hooks/useMouseGlowEffect";
+import { sliderTextContent, teamMembers } from "@data/data";
+import SlidingText from "@components/ui/sliding-text/SlidingText";
+import ProfileCard from "./ProfileCard";
+import GlobeIcon from "@assets/GlobeIcon";
 
 function TeamSection() {
   const cardContainerRef = useRef<HTMLDivElement | null>(null);
 
-  // Hook applies mouse tracking to update CSS variables on profile cards
+  // Hook applies mouse tracking to team profile cards
   useMouseGlowEffect(cardContainerRef);
 
   return (
