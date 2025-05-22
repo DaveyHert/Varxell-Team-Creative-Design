@@ -1,11 +1,11 @@
 import { useEffect, type RefObject } from "react";
 
 /**
- * This hook tracks mouse movement inside a container and updates each child element
- * with custom CSS variables --mouse-x and --mouse-y based on cursor position
- * relative to each child. Useful for interactive effects like radial gradients.
+ * Tracks mouse movement within a container and updates each child element
+ * with CSS variables `--mouse-x` and `--mouse-y`, representing the cursor’s
+ * position relative to each child. Ideal for interactive effects like radial gradients.
  *
- * @param containerRef - Ref to the container element with interactive children
+ * @param containerRef - Ref to the container element whose children respond to mouse movement
  */
 
 export function useMouseGlowEffect(
