@@ -21,6 +21,12 @@ import avatar20 from "../assets/img/avatar-20.jpg";
 import avatar21 from "../assets/img/avatar-21.jpg";
 import avatar22 from "../assets/img/avatar-22.jpg";
 
+// card icons
+import DesignIconsSet from "@assets/DesignIconsSet";
+import varxellLogo from "@assets/VarxellLogo";
+import DesignSystemIcon from "@assets/DesignSystemIcon";
+import VarcellIllustration from "@assets/VarcellIllustration";
+
 export const teamMembers = [
   {
     avatar: avatar1,
@@ -188,3 +194,23 @@ export const teamMembers = [
 ];
 
 export const sliderTextContent = `Hello. Hola. Hallo. Hei. Haye. Hoi. Halo. Bonjour. Ciao. Konnichiwa. Olá. Nǐ hǎo. Ahoj. Kumusta. Tere. Buna. Yassas. Sannu. Helo. Aloha. Bula. Halló. Kia ora. Ave. Kamusta.`;
+
+export const cardsData = [
+  {
+    title: "Brand Guildlines",
+    content:
+      "Learn how we build thoughtful systems and refine our brand assets.",
+    illustration: VarcellIllustration,
+    icon: varxellLogo,
+  },
+  {
+    title: "Nimble",
+    content:
+      "Our design system for those who care about details. Consistent. Flexible. Built to grow with you.",
+    illustration: DesignIconsSet,
+    icon: DesignSystemIcon,
+  },
+];
+
+export const resourcesInfoText =
+  "Some call them assets. We call them ours. Every system, every design, every spec, is planted, pruned, and grown with care. We don't just build tools — we care for them.";
