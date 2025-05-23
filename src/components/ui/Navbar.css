@@ -1,5 +1,9 @@
 .sentinel-nav-trigger {
   height: 1px;
+  visibility: hidden;
+}
+.navbar-placeholder {
+  visibility: hidden;
 }
 
 .navbar {
