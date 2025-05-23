@@ -2,32 +2,45 @@ import { useRef, useState } from "react";
 import usePinOnScroll from "@hooks/usePinOnScroll";
 import { motion } from "motion/react";
 import "./Navbar.css";
+import { useActiveSection } from "@hooks/useActiveSection";
 
 const navLinks = ["Home", "Resources", "People", "Career"];
 
-const options = {
+const navConfig = {
   rootMargin: "-20px",
   threshold: 0,
 };
+
+const sectionsConfig = [
+  { id: "Home", threshold: 0.2 },
+  { id: "Resources", threshold: 0.2, rootMargin: "0px 0px -30% 0px" },
+  { id: "People", threshold: 0.1, rootMargin: "0px 0px -20% 0px" },
+  { id: "Career", threshold: 0.8 },
+];
 
 function NavBar() {
   const sentinelRef = useRef<HTMLDivElement | null>(null);
   const navRef = useRef<HTMLDivElement | null>(null);
   const [activeLink, setActiveLink] = useState(navLinks[0]);
-  const isPinned = usePinOnScroll(sentinelRef, options);
+  const isPinned = usePinOnScroll(sentinelRef, navConfig);
+  const [manualOverride, setManualOverride] = useState(false);
 
   const handleNavSelect = (navlink: string) => {
-    setActiveLink(navlink);
+    setManualOverride(true); // suppress intersection observer briefly
+    setActiveLink(navlink); // update manually on click
+
+    // Clear override after 1 second
+    setTimeout(() => {
+      setManualOverride(false);
+    }, 1000);
   };
+  // useActiveSection(handleNavSelect);
+  useActiveSection(setActiveLink, sectionsConfig, manualOverride);
 
   return (
     <>
-      {/* Sentinel just above the navbar to trigger fixed nav */}
-      <div
-        aria-hidden='true'
-        ref={sentinelRef}
-        className='sentinel-nav-trigger'
-      />
+      {/* Invisible trigger element used to detect when the navbar should become fixed */}
+      <div aria-hidden='true' ref={sentinelRef} className='navbar-sentinel' />
 
       {/* Navbar */}
       <nav
@@ -49,7 +62,7 @@ function NavBar() {
               {activeLink === link ? (
                 <motion.span
                   className='active-link'
-                  layoutId='active-link'
+                  layoutId='active-link-glow'
                 ></motion.span>
               ) : null}
             </li>
@@ -57,10 +70,11 @@ function NavBar() {
         </ul>
       </nav>
 
-      {/* Spacer to prevent layout jump when nav is removed from  - pseudo navbar placeholder*/}
+      {/* Spacer element to prevent layout shift when the navbar becomes fixed */}
       {isPinned && (
         <div
           aria-hidden='true'
+          className='navbar-placeholder'
           style={{
             height: navRef.current?.offsetHeight || 0,
           }}
