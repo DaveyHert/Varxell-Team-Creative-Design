@@ -6,13 +6,13 @@ import NoiseFilter from "@assets/NoiseFilter";
 
 export default function HeroSection() {
   return (
-    <div className='hero-section' id='Home'>
+    <section className='hero-section' id='Home'>
       <div className='hero-content'>
         <HeroTitle />
         <HeroSubtitle />
         <Navbar />
         <NoiseFilter />
       </div>
-    </div>
+    </section>
   );
 }
