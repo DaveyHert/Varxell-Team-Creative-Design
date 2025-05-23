@@ -1,47 +1,24 @@
 import "./ResourcesSection.css";
 
-import DesignIconsSet from "../../../assets/DesignIconsSet";
-import varxellLogo from "../../../assets/VarxellLogo";
-import DesignSystemIcon from "../../../assets/DesignSystemIcon";
-import ResourceStars from "../../../assets/ResourceStars";
-import VarcellIllustration from "../../../assets/VarcellIllustration";
+import ResourceStars from "@assets/ResourceStars";
+import { cardsData, resourcesInfoText } from "@data/data";
 
-const cards = [
-  {
-    title: "Brand Guildlines",
-    content:
-      "Learn how we build thoughtful systems and refine our brand assets.",
-    illustration: VarcellIllustration,
-    icon: varxellLogo,
-  },
-  {
-    title: "Nimble",
-    content:
-      "Our design system for those who care about details. Consistent. Flexible. Built to grow with you.",
-    illustration: DesignIconsSet,
-    icon: DesignSystemIcon,
-  },
-];
 function ResourcesSection() {
   return (
     <div className='wrapper'>
-      <div className='resources-section' id='Resources'>
+      <section className='resources-section' id='Resources'>
         <div className='resources-info'>
           <h2 className='heading-text'>
             We take care of our resources <br /> & tools like plants in a
             garden.
           </h2>
 
-          <p className='info-text'>
-            Some call them assets. We call them ours. Every system, every
-            design, every spec, is planted, pruned, and grown with care. We
-            don’t just build tools — we care for them.
-          </p>
+          <p className='info-text'>{resourcesInfoText}</p>
         </div>
 
         {/* card section */}
         <div className='resource-cards'>
-          {cards.map((card) => (
+          {cardsData.map((card) => (
             <div className='card' key={card.title}>
               <div className='card-wrapper'>
                 {card.illustration?.()}
@@ -60,7 +37,7 @@ function ResourcesSection() {
           <ResourceStars />
           <div className='resources-blob' aria-hidden='true'></div>
         </div>
-      </div>
+      </section>
     </div>
   );
 }
