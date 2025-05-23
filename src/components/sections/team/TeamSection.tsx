@@ -14,7 +14,7 @@ function TeamSection() {
   useMouseGlowEffect(cardContainerRef);
 
   return (
-    <div className='team-section' id='People'>
+    <section className='team-section' id='People'>
       <SlidingText>{sliderTextContent}</SlidingText>
       <div className='wrapper'>
         <h2 className='heading-text'>
@@ -40,7 +40,7 @@ function TeamSection() {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 export default TeamSection;
