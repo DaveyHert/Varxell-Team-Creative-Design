@@ -8,7 +8,7 @@ function LinkIcon() {
         strokeLinejoin='round'
       ></g>
       <g id='SVGRepo_iconCarrier'>
-        <g clip-path='url(#clip0_429_11072)'>
+        <g clipPath='url(#clip0_429_11072)'>
           <path
             d='M11 3.99994H4V17.9999C4 19.1045 4.89543 19.9999 6 19.9999H18C19.1046 19.9999 20 19.1045 20 17.9999V12.9999'
             stroke='#292929'
