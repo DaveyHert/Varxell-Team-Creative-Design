@@ -1,0 +1,12 @@
+.footer-logo-container {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.footer-logo {
+  width: 100%;
+  height: auto;
+  display: block;
+}
