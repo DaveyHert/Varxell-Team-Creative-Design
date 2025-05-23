@@ -1150,9 +1150,9 @@ const ResourceStars = () => {
           y2='238.36'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='white' stop-opacity='0' />
-          <stop offset='0.5' stop-color='white' />
-          <stop offset='1' stop-color='white' stop-opacity='0' />
+          <stop stopColor='white' stopOpacity='0' />
+          <stop offset='0.5' stopColor='white' />
+          <stop offset='1' stopColor='white' stopOpacity='0' />
         </linearGradient>
         <linearGradient
           id='paint1_linear_296_1332'
@@ -1162,9 +1162,9 @@ const ResourceStars = () => {
           y2='244.676'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='white' stop-opacity='0' />
-          <stop offset='0.5' stop-color='white' />
-          <stop offset='1' stop-color='white' stop-opacity='0' />
+          <stop stopColor='white' stopOpacity='0' />
+          <stop offset='0.5' stopColor='white' />
+          <stop offset='1' stopColor='white' stopOpacity='0' />
         </linearGradient>
         <linearGradient
           id='paint2_linear_296_1332'
@@ -1174,8 +1174,8 @@ const ResourceStars = () => {
           y2='231.347'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='white' />
-          <stop offset='1' stop-color='white' />
+          <stop stopColor='white' />
+          <stop offset='1' stopColor='white' />
         </linearGradient>
         <linearGradient
           id='paint3_linear_296_1332'
@@ -1185,9 +1185,9 @@ const ResourceStars = () => {
           y2='207.15'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='white' stop-opacity='0' />
-          <stop offset='0.5' stop-color='white' />
-          <stop offset='1' stop-color='white' stop-opacity='0' />
+          <stop stopColor='white' stopOpacity='0' />
+          <stop offset='0.5' stopColor='white' />
+          <stop offset='1' stopColor='white' stopOpacity='0' />
         </linearGradient>
         <linearGradient
           id='paint4_linear_296_1332'
@@ -1197,9 +1197,9 @@ const ResourceStars = () => {
           y2='221.15'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='white' stop-opacity='0' />
-          <stop offset='0.5' stop-color='white' />
-          <stop offset='1' stop-color='white' stop-opacity='0' />
+          <stop stopColor='white' stopOpacity='0' />
+          <stop offset='0.5' stopColor='white' />
+          <stop offset='1' stopColor='white' stopOpacity='0' />
         </linearGradient>
         <linearGradient
           id='paint5_linear_296_1332'
@@ -1209,8 +1209,8 @@ const ResourceStars = () => {
           y2='196.179'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='white' />
-          <stop offset='1' stop-color='white' />
+          <stop stopColor='white' />
+          <stop offset='1' stopColor='white' />
         </linearGradient>
         <linearGradient
           id='paint6_linear_296_1332'
@@ -1220,9 +1220,9 @@ const ResourceStars = () => {
           y2='228.712'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='white' stop-opacity='0' />
-          <stop offset='0.5' stop-color='white' />
-          <stop offset='1' stop-color='white' stop-opacity='0' />
+          <stop stopColor='white' stopOpacity='0' />
+          <stop offset='0.5' stopColor='white' />
+          <stop offset='1' stopColor='white' stopOpacity='0' />
         </linearGradient>
         <linearGradient
           id='paint7_linear_296_1332'
@@ -1232,9 +1232,9 @@ const ResourceStars = () => {
           y2='241.616'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='white' stop-opacity='0' />
-          <stop offset='0.5' stop-color='white' />
-          <stop offset='1' stop-color='white' stop-opacity='0' />
+          <stop stopColor='white' stopOpacity='0' />
+          <stop offset='0.5' stopColor='white' />
+          <stop offset='1' stopColor='white' stopOpacity='0' />
         </linearGradient>
         <linearGradient
           id='paint8_linear_296_1332'
@@ -1244,8 +1244,8 @@ const ResourceStars = () => {
           y2='218.6'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='white' />
-          <stop offset='1' stop-color='white' />
+          <stop stopColor='white' />
+          <stop offset='1' stopColor='white' />
         </linearGradient>
         <linearGradient
           id='paint9_linear_296_1332'
@@ -1255,9 +1255,9 @@ const ResourceStars = () => {
           y2='167.777'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='white' stop-opacity='0' />
-          <stop offset='0.5' stop-color='white' />
-          <stop offset='1' stop-color='white' stop-opacity='0' />
+          <stop stopColor='white' stopOpacity='0' />
+          <stop offset='0.5' stopColor='white' />
+          <stop offset='1' stopColor='white' stopOpacity='0' />
         </linearGradient>
         <linearGradient
           id='paint10_linear_296_1332'
@@ -1267,9 +1267,9 @@ const ResourceStars = () => {
           y2='159.681'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='white' stop-opacity='0' />
-          <stop offset='0.5' stop-color='white' />
-          <stop offset='1' stop-color='white' stop-opacity='0' />
+          <stop stopColor='white' stopOpacity='0' />
+          <stop offset='0.5' stopColor='white' />
+          <stop offset='1' stopColor='white' stopOpacity='0' />
         </linearGradient>
         <linearGradient
           id='paint11_linear_296_1332'
@@ -1279,8 +1279,8 @@ const ResourceStars = () => {
           y2='153.625'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='white' />
-          <stop offset='1' stop-color='white' />
+          <stop stopColor='white' />
+          <stop offset='1' stopColor='white' />
         </linearGradient>
         <linearGradient
           id='paint12_linear_296_1332'
@@ -1290,9 +1290,9 @@ const ResourceStars = () => {
           y2='253.829'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='white' stop-opacity='0' />
-          <stop offset='0.5' stop-color='white' />
-          <stop offset='1' stop-color='white' stop-opacity='0' />
+          <stop stopColor='white' stopOpacity='0' />
+          <stop offset='0.5' stopColor='white' />
+          <stop offset='1' stopColor='white' stopOpacity='0' />
         </linearGradient>
         <linearGradient
           id='paint13_linear_296_1332'
@@ -1302,9 +1302,9 @@ const ResourceStars = () => {
           y2='255.807'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='white' stop-opacity='0' />
-          <stop offset='0.5' stop-color='white' />
-          <stop offset='1' stop-color='white' stop-opacity='0' />
+          <stop stopColor='white' stopOpacity='0' />
+          <stop offset='0.5' stopColor='white' />
+          <stop offset='1' stopColor='white' stopOpacity='0' />
         </linearGradient>
         <linearGradient
           id='paint14_linear_296_1332'
@@ -1314,8 +1314,8 @@ const ResourceStars = () => {
           y2='251.27'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='white' />
-          <stop offset='1' stop-color='white' />
+          <stop stopColor='white' />
+          <stop offset='1' stopColor='white' />
         </linearGradient>
         <linearGradient
           id='paint15_linear_296_1332'
@@ -1325,9 +1325,9 @@ const ResourceStars = () => {
           y2='157.472'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='white' stop-opacity='0' />
-          <stop offset='0.5' stop-color='white' />
-          <stop offset='1' stop-color='white' stop-opacity='0' />
+          <stop stopColor='white' stopOpacity='0' />
+          <stop offset='0.5' stopColor='white' />
+          <stop offset='1' stopColor='white' stopOpacity='0' />
         </linearGradient>
         <linearGradient
           id='paint16_linear_296_1332'
@@ -1337,9 +1337,9 @@ const ResourceStars = () => {
           y2='162.147'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='white' stop-opacity='0' />
-          <stop offset='0.5' stop-color='white' />
-          <stop offset='1' stop-color='white' stop-opacity='0' />
+          <stop stopColor='white' stopOpacity='0' />
+          <stop offset='0.5' stopColor='white' />
+          <stop offset='1' stopColor='white' stopOpacity='0' />
         </linearGradient>
         <linearGradient
           id='paint17_linear_296_1332'
@@ -1349,8 +1349,8 @@ const ResourceStars = () => {
           y2='151.421'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='white' />
-          <stop offset='1' stop-color='white' />
+          <stop stopColor='white' />
+          <stop offset='1' stopColor='white' />
         </linearGradient>
         <linearGradient
           id='paint18_linear_296_1332'
@@ -1360,9 +1360,9 @@ const ResourceStars = () => {
           y2='253.038'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='white' stop-opacity='0' />
-          <stop offset='0.5' stop-color='white' />
-          <stop offset='1' stop-color='white' stop-opacity='0' />
+          <stop stopColor='white' stopOpacity='0' />
+          <stop offset='0.5' stopColor='white' />
+          <stop offset='1' stopColor='white' stopOpacity='0' />
         </linearGradient>
         <linearGradient
           id='paint19_linear_296_1332'
@@ -1372,9 +1372,9 @@ const ResourceStars = () => {
           y2='253.391'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='white' stop-opacity='0' />
-          <stop offset='0.5' stop-color='white' />
-          <stop offset='1' stop-color='white' stop-opacity='0' />
+          <stop stopColor='white' stopOpacity='0' />
+          <stop offset='0.5' stopColor='white' />
+          <stop offset='1' stopColor='white' stopOpacity='0' />
         </linearGradient>
         <linearGradient
           id='paint20_linear_296_1332'
@@ -1384,8 +1384,8 @@ const ResourceStars = () => {
           y2='250.914'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='white' />
-          <stop offset='1' stop-color='white' />
+          <stop stopColor='white' />
+          <stop offset='1' stopColor='white' />
         </linearGradient>
         <linearGradient
           id='paint21_linear_296_1332'
@@ -1395,9 +1395,9 @@ const ResourceStars = () => {
           y2='186.429'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='white' stop-opacity='0' />
-          <stop offset='0.5' stop-color='white' />
-          <stop offset='1' stop-color='white' stop-opacity='0' />
+          <stop stopColor='white' stopOpacity='0' />
+          <stop offset='0.5' stopColor='white' />
+          <stop offset='1' stopColor='white' stopOpacity='0' />
         </linearGradient>
         <linearGradient
           id='paint22_linear_296_1332'
@@ -1407,9 +1407,9 @@ const ResourceStars = () => {
           y2='186.781'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='white' stop-opacity='0' />
-          <stop offset='0.5' stop-color='white' />
-          <stop offset='1' stop-color='white' stop-opacity='0' />
+          <stop stopColor='white' stopOpacity='0' />
+          <stop offset='0.5' stopColor='white' />
+          <stop offset='1' stopColor='white' stopOpacity='0' />
         </linearGradient>
         <linearGradient
           id='paint23_linear_296_1332'
@@ -1419,8 +1419,8 @@ const ResourceStars = () => {
           y2='184.305'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='white' />
-          <stop offset='1' stop-color='white' />
+          <stop stopColor='white' />
+          <stop offset='1' stopColor='white' />
         </linearGradient>
         <linearGradient
           id='paint24_linear_296_1332'
@@ -1430,9 +1430,9 @@ const ResourceStars = () => {
           y2='298.297'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='white' stop-opacity='0' />
-          <stop offset='0.5' stop-color='white' />
-          <stop offset='1' stop-color='white' stop-opacity='0' />
+          <stop stopColor='white' stopOpacity='0' />
+          <stop offset='0.5' stopColor='white' />
+          <stop offset='1' stopColor='white' stopOpacity='0' />
         </linearGradient>
         <linearGradient
           id='paint25_linear_296_1332'
@@ -1442,9 +1442,9 @@ const ResourceStars = () => {
           y2='302.566'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='white' stop-opacity='0' />
-          <stop offset='0.5' stop-color='white' />
-          <stop offset='1' stop-color='white' stop-opacity='0' />
+          <stop stopColor='white' stopOpacity='0' />
+          <stop offset='0.5' stopColor='white' />
+          <stop offset='1' stopColor='white' stopOpacity='0' />
         </linearGradient>
         <linearGradient
           id='paint26_linear_296_1332'
@@ -1454,8 +1454,8 @@ const ResourceStars = () => {
           y2='292.772'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='white' />
-          <stop offset='1' stop-color='white' />
+          <stop stopColor='white' />
+          <stop offset='1' stopColor='white' />
         </linearGradient>
         <linearGradient
           id='paint27_linear_296_1332'
@@ -1465,9 +1465,9 @@ const ResourceStars = () => {
           y2='174.121'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='white' stop-opacity='0' />
-          <stop offset='0.5' stop-color='white' />
-          <stop offset='1' stop-color='white' stop-opacity='0' />
+          <stop stopColor='white' stopOpacity='0' />
+          <stop offset='0.5' stopColor='white' />
+          <stop offset='1' stopColor='white' stopOpacity='0' />
         </linearGradient>
         <linearGradient
           id='paint28_linear_296_1332'
@@ -1477,9 +1477,9 @@ const ResourceStars = () => {
           y2='174.847'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='white' stop-opacity='0' />
-          <stop offset='0.5' stop-color='white' />
-          <stop offset='1' stop-color='white' stop-opacity='0' />
+          <stop stopColor='white' stopOpacity='0' />
+          <stop offset='0.5' stopColor='white' />
+          <stop offset='1' stopColor='white' stopOpacity='0' />
         </linearGradient>
         <linearGradient
           id='paint29_linear_296_1332'
@@ -1489,8 +1489,8 @@ const ResourceStars = () => {
           y2='168.896'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='white' />
-          <stop offset='1' stop-color='white' />
+          <stop stopColor='white' />
+          <stop offset='1' stopColor='white' />
         </linearGradient>
       </defs>
     </svg>
