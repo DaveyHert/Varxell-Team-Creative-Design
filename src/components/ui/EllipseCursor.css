@@ -17,6 +17,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  transform: translateZ(0);
 }
 
 .badge-text {
