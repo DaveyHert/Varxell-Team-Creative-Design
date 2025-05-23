@@ -8,7 +8,7 @@ const textInfo =
 
 function CareersSection() {
   return (
-    <div className='careers-section' id='Career'>
+    <section className='careers-section' id='Career'>
       <div className='careers-content'>
         <div className='join-us'>
           <h2 className='heading-text'>Want to build with us?</h2>
@@ -23,7 +23,7 @@ function CareersSection() {
         </div>
       </div>
       <div aria-hidden='true' className='dark-radial-gradient'></div>
-    </div>
+    </section>
   );
 }
 export default CareersSection;
