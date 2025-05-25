@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import "./TeamSection.css";
 
 import { useMouseGlowEffect } from "@hooks/useMouseGlowEffect";
-import { sliderTextContent, teamMembers } from "@data/data";
+import { sliderTextContent, teamMembers, teamInfoText } from "@data/data";
 import SlidingText from "@components/ui/sliding-text/SlidingText";
 import ProfileCard from "./ProfileCard";
 import GlobeIcon from "@assets/GlobeIcon";
@@ -26,11 +26,7 @@ function TeamSection() {
           and fluent in <span>10 languages.</span>
         </h2>
 
-        <p className='info-text'>
-          Our diverse team brings together a wealth of experience. Each member
-          contributes a unique perspective, enriching our projects with depth
-          and creative flair.
-        </p>
+        <p className='info-text'>{teamInfoText}</p>
 
         <div className='team-members-container' ref={cardContainerRef}>
           {teamMembers.map((profile) => (
