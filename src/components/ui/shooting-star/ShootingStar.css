@@ -1,0 +1,20 @@
+.shooting-stars {
+  position: "absolute";
+  width: "100%";
+  bottom: -10;
+  pointer-events: "none";
+
+  .shooting-star {
+    position: absolute;
+    background: linear-gradient(
+      90deg,
+      #d9d9d9 -1.53%,
+      rgba(0, 0, 0, 0) -1.52%,
+      rgba(255, 255, 255, 0.5) 50%,
+      rgba(0, 0, 0, 0)
+    );
+    width: 300px;
+    height: 1px;
+    bottom: 0;
+  }
+}
