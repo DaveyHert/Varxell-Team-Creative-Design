@@ -1,10 +1,11 @@
 .resources-section {
   min-height: 800px;
   padding-bottom: 120px;
+  position: relative; /* for shooting star*/
 
   /* resource text content */
   .resources-info {
-    position: relative;
+    position: relative; /* for lines*/
     margin-bottom: 30px;
     z-index: 10;
 
@@ -70,7 +71,7 @@
       width: 1px;
       height: 720px;
       right: 15.5%;
-      bottom: -350px;
+      bottom: -180px;
       background: linear-gradient(
         0deg,
         rgba(0, 0, 0, 0),
@@ -253,8 +254,6 @@
 }
 
 .resources-stars {
-  position: relative;
-
   .resources-stars-svg {
     position: absolute;
     transform: translateY(-130px);
@@ -281,3 +280,5 @@
     }
   }
 }
+
+
