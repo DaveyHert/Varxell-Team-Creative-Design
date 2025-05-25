@@ -10,7 +10,7 @@ const ResourceStars = () => {
     >
       <g id='star-set'>
         <g id='Group 40'>
-          <g id='star'>
+          <g id='star_1' className='twinkle'>
             <rect
               id='Rectangle 63'
               x='273.45'
@@ -37,7 +37,7 @@ const ResourceStars = () => {
               fill='url(#paint2_linear_296_1332)'
             />
           </g>
-          <g id='star_2'>
+          <g id='star_2' className='twinkle' style={{ animationDelay: ".5s" }}>
             <rect
               id='Rectangle 63_2'
               x='736.541'
@@ -65,7 +65,7 @@ const ResourceStars = () => {
               fill='url(#paint5_linear_296_1332)'
             />
           </g>
-          <g id='star_3'>
+          <g id='star_3' className='twinkle' style={{ animationDelay: ".3s" }}>
             <rect
               id='Rectangle 63_3'
               x='462.909'
@@ -93,7 +93,7 @@ const ResourceStars = () => {
               fill='url(#paint8_linear_296_1332)'
             />
           </g>
-          <g id='star_4'>
+          <g id='star_4' className='twinkle'>
             <rect
               id='Rectangle 63_4'
               x='867.961'
@@ -121,7 +121,7 @@ const ResourceStars = () => {
               fill='url(#paint11_linear_296_1332)'
             />
           </g>
-          <g id='star_5'>
+          <g id='star_5' className='twinkle'>
             <rect
               id='Rectangle 63_5'
               x='277.34'
