@@ -61,14 +61,14 @@ export const teamMembers = [
   {
     avatar: avatar12,
     name: "Harry Smith",
-    xHandle: "@harrysmith ",
+    xHandle: "@harrysmith",
     country: "UK",
     role: "Design Engineer",
   },
 
   {
     avatar: avatar5,
-    name: "Chloe Brooks ",
+    name: "Chloe Brooks",
     xHandle: "@chloe_int",
     country: "Australia",
     role: "Interaction Designer",
@@ -91,7 +91,7 @@ export const teamMembers = [
 
   {
     avatar: avatar11,
-    name: "Sofia Lin ",
+    name: "Sofia Lin",
     xHandle: "@so.fi.lin",
     country: "UK",
     role: "Design Engineer",
@@ -106,7 +106,7 @@ export const teamMembers = [
   },
   {
     avatar: avatar20,
-    name: "Mikhail Fischer ",
+    name: "Mikhail Fischer",
     xHandle: "@mikhail",
     country: "Germany",
     role: "CTO",
@@ -214,3 +214,6 @@ export const cardsData = [
 
 export const resourcesInfoText =
   "Some call them assets. We call them ours. Every system, every design, every spec, is planted, pruned, and grown with care. We don't just build tools — we care for them.";
+
+export const teamInfoText =
+  "Our diverse team brings together a wealth of experience. Each member contributes a unique perspective, enriching our projects with depth and creative flair.";
