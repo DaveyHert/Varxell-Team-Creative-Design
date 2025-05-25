@@ -1,7 +1,9 @@
 import "./ResourcesSection.css";
-
 import ResourceStars from "@assets/ResourceStars";
 import { cardsData, resourcesInfoText } from "@data/data";
+import LoveIcon from "@assets/LoveIcon";
+import WaterPlantIcon from "@assets/WaterPlantIcon";
+import ShootingStar from "@components/ui/shooting-star/ShootingStar";
 
 function ResourcesSection() {
   return (
@@ -9,7 +11,8 @@ function ResourcesSection() {
       <section className='resources-section' id='Resources'>
         <div className='resources-info'>
           <h2 className='heading-text'>
-            We take care of our resources <br /> & tools like plants in a
+            We care for our resources <br /> <LoveIcon /> like plants in a{" "}
+            <WaterPlantIcon />
             garden.
           </h2>
 
@@ -35,8 +38,9 @@ function ResourcesSection() {
         </div>
         <div className='resources-stars'>
           <ResourceStars />
-          <div className='resources-blob' aria-hidden='true'></div>
+          <div className='resources-blob' aria-hidden='true' />
         </div>
+        <ShootingStar />
       </section>
     </div>
   );
