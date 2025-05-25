@@ -1,5 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap"); */
+
+/* causes layout shift bug - moved to html link */
 
 *,
 *::before,
@@ -32,7 +34,7 @@
 }
 
 body {
-  font-family: "Geist", sans-serif;
+  font-family: "Geist", "Inter", sans-serif;
 
   &::selection {
     background: #0059ec;
@@ -162,5 +164,21 @@ html {
   * {
     scrollbar-width: auto;
     scrollbar-color: #5c5c5c #2e2e2e;
+  }
+}
+
+/* twinkle star animation */
+.twinkle {
+  animation: twinkle 1.7s infinite alternate;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+@keyframes twinkle {
+  from {
+    transform: scale(0.6);
+  }
+  to {
+    transform: scale(1);
   }
 }
