@@ -23,19 +23,19 @@ function NavBar() {
   const navRef = useRef<HTMLDivElement | null>(null);
   const [activeLink, setActiveLink] = useState(navLinks[0]);
   const isPinned = usePinOnScroll(sentinelRef, navConfig);
-  const [manualOverride, setManualOverride] = useState(false);
+  const [isManuallyScrolling, setIsManuallyScrolling] = useState(false);
 
   const handleNavSelect = (navlink: string) => {
-    setManualOverride(true); // suppress intersection observer briefly
+    setIsManuallyScrolling(true); // suppress intersection observer briefly
     setActiveLink(navlink); // update manually on click
 
     // Clear override after 1 second
     setTimeout(() => {
-      setManualOverride(false);
+      setIsManuallyScrolling(false);
     }, 1000);
   };
   // useActiveSection(handleNavSelect);
-  useActiveSection(setActiveLink, sectionsConfig, manualOverride);
+  useActiveSection(setActiveLink, sectionsConfig, isManuallyScrolling);
 
   return (
     <>
