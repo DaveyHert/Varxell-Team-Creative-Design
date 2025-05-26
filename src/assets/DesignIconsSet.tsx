@@ -7,7 +7,7 @@ const pathVariants = {
     pathLength: 1,
     opacity: 1,
     transition: {
-      duration: 1.5,
+      duration: 2.5,
       ease: "easeInOut",
       delay: 0.2,
     },
@@ -840,11 +840,6 @@ const DesignIconsSet = () => {
           </g>
         </g>
       </g>
-      <defs>
-        {/* <clipPath id='clip0_269_177'>
-          <rect width='455' height='216' fill='white' />
-        </clipPath> */}
-      </defs>
     </svg>
   );
 };
