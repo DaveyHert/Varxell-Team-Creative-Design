@@ -5,6 +5,7 @@
   background-size: 100px 100px;
   position: relative;
   overflow: hidden;
+  margin-bottom: 150px;
 
   /* inner bg mat box pattern */
   &::before {
