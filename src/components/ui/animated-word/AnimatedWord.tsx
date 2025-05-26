@@ -7,7 +7,6 @@ import { motion, useAnimation } from "motion/react";
  * 2. Ripple effect: Animates the stroke dash offset and fill opacity to create a ripple-like effect.
  * 3. Final phase: Transitions to a solid stroke and fades out the fill.
  *
- * The SVG contains multiple paths representing stylized text, each animated in sync.
  */
 export const AnimatedWord = () => {
   const controls = useAnimation();

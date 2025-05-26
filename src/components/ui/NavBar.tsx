@@ -34,6 +34,7 @@ function NavBar() {
       setIsManuallyScrolling(false);
     }, 1000);
   };
+
   // useActiveSection(handleNavSelect);
   useActiveSection(setActiveLink, sectionsConfig, isManuallyScrolling);
 
@@ -75,9 +76,7 @@ function NavBar() {
         <div
           aria-hidden='true'
           className='navbar-placeholder'
-          style={{
-            height: navRef.current?.offsetHeight || 0,
-          }}
+          style={{ height: navRef.current?.offsetHeight || 0 }}
         />
       )}
     </>
