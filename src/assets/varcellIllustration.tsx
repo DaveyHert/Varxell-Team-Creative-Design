@@ -3,7 +3,10 @@ import { useRef } from "react";
 
 const VarcellIllustration = () => {
   const svgRef = useRef<SVGSVGElement | null>(null);
-  const isInView = useInView(svgRef, { once: false, amount: 0.8 });
+  const isMobile = window.innerHeight < 768;
+  const isInView = useInView(svgRef, {
+    amount: isMobile ? 0.1 : 0.8,
+  });
 
   return (
     <svg
