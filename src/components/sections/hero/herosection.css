@@ -108,16 +108,14 @@
   }
 
   .animated-word {
-    /* display: inline-block; */
+    display: inline-block;
     position: relative;
     bottom: -2px;
-    display: inline-flex;
-    flex-direction: column;
-    justify-content: flex-end;
 
     svg {
-      width: clamp(80px, 10vw, 140px);
-      height: 45px;
+      width: 2.6em;
+      /*keeps size relative to the container's font size in this case */
+      height: 100%;
     }
 
     span {

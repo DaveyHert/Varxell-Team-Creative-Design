@@ -135,6 +135,13 @@ html {
   color: var(--info-text-color);
 }
 
+.break-line {
+  display: block;
+
+  @media only screen and (max-width: 550px) {
+    display: inline;
+  }
+}
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
