@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useMemo, useRef, useState } from "react";
 import usePinOnScroll from "@hooks/usePinOnScroll";
 import { motion } from "motion/react";
 import "./Navbar.css";
@@ -11,19 +11,27 @@ const navConfig = {
   threshold: 0,
 };
 
-const sectionsConfig = [
-  { id: "Home", threshold: 0.2 },
-  { id: "Resources", threshold: 0.2, rootMargin: "0px 0px -30% 0px" },
-  { id: "People", threshold: 0.1, rootMargin: "0px 0px -20% 0px" },
-  { id: "Career", threshold: 0.8 },
-];
-
 function NavBar() {
   const sentinelRef = useRef<HTMLDivElement | null>(null);
   const navRef = useRef<HTMLDivElement | null>(null);
   const [activeLink, setActiveLink] = useState(navLinks[0]);
   const isPinned = usePinOnScroll(sentinelRef, navConfig);
   const [isManuallyScrolling, setIsManuallyScrolling] = useState(false);
+  const isMobile = window.innerWidth < 768;
+
+  const sectionsConfig = useMemo(
+    () => [
+      { id: "Home", threshold: 0.2 },
+      { id: "Resources", threshold: 0.2, rootMargin: "0px 0px -30% 0px" },
+      {
+        id: "People",
+        threshold: isMobile ? 0.05 : 0.1,
+        rootMargin: isMobile ? "10%" : "0px 0px -20% 0px",
+      },
+      { id: "Career", threshold: 0.8 },
+    ],
+    [isMobile]
+  );
 
   const handleNavSelect = (navlink: string) => {
     setIsManuallyScrolling(true); // suppress intersection observer briefly
@@ -49,7 +57,7 @@ function NavBar() {
         ref={navRef}
         style={{
           position: isPinned ? "fixed" : "relative",
-          top: isPinned ? "20px" : "initial",
+          top: isPinned ? (isMobile ? "10px" : "15px") : "initial",
         }}
       >
         <ul className='navlist'>
