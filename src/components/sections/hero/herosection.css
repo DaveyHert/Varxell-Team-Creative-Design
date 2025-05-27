@@ -8,6 +8,13 @@
   background-position: center -120px;
   position: relative;
 
+  .main-logo {
+    position: absolute;
+    left: 50px;
+    top: 40px;
+    width: 30px;
+  }
+
   /* visually hide noise asset in dom */
   .noise-filter-visually-hidden {
     display: none;
@@ -101,12 +108,15 @@
   }
 
   .animated-word {
-    display: inline-block;
+    /* display: inline-block; */
     position: relative;
     bottom: -2px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: flex-end;
 
     svg {
-      width: 140px;
+      width: clamp(80px, 10vw, 140px);
       height: 45px;
     }
 
