@@ -18,9 +18,9 @@ function TeamSection() {
       <div className='wrapper'>
         <h2 className='heading-text'>
           We're a global <span>team,</span>
-          <br />
-          spread across <span>10 countries</span>
-          <br />
+          <span className='break-line' /> spread across{" "}
+          <span>10 countries</span>
+          <span className='break-line' />
           <GlobeIcon />
           and fluent in <span>10 languages.</span>
         </h2>
