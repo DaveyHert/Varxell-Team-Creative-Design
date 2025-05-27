@@ -19,6 +19,8 @@ export function usePinOnScroll(
     if (!triggerElement) return; //guard
 
     const observer = new IntersectionObserver(([entry]) => {
+      if (!entry) return;
+
       setIsPinned(!entry.isIntersecting); // Pin when element/sentinel is out of view
     }, options);
 

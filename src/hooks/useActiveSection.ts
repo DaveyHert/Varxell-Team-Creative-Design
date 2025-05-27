@@ -33,7 +33,7 @@ export function useActiveSection(
 
       const observer = new IntersectionObserver(
         ([entry]) => {
-          if (entry.isIntersecting && !isManuallyScrolling) {
+          if (entry && entry.isIntersecting && !isManuallyScrolling) {
             setActiveLink(id);
           }
         },

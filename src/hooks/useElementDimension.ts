@@ -24,6 +24,8 @@ export function useElementDimension(
     if (!targetRef.current) return;
 
     const observer = new ResizeObserver(([entry]) => {
+      if (!entry) return;
+
       const { width, height } = entry.contentRect;
       const roundedWidth = Math.floor(width);
       const roundedHeight = Math.floor(height);
