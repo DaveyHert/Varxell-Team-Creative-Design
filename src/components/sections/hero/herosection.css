@@ -69,6 +69,7 @@
   text-align: center;
   color: var(--main-text-color);
   margin-bottom: 30px;
+  white-space: nowrap;
 
   .word-squeeze {
     display: inline-flex;
