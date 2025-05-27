@@ -11,8 +11,8 @@ function ResourcesSection() {
       <section className='resources-section' id='Resources'>
         <div className='resources-info'>
           <h2 className='heading-text'>
-            We care for our resources <br /> <LoveIcon /> like plants in a{" "}
-            <WaterPlantIcon />
+            <span className='break-line'>We care for our resources </span>
+            <LoveIcon /> like plants in a <WaterPlantIcon />
             garden.
           </h2>
 
