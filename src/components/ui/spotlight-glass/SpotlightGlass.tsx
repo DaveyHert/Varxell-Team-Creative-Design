@@ -6,6 +6,21 @@ interface SpotlightGlassProp {
   children: ReactNode;
 }
 
+/**
+ * A component that renders a wrapper div with a moving "glass" effect
+ * using Framer Motion. The glass effect animates horizontally across the parent container,
+ * with its movement dynamically calculated based on the container's width.
+ *
+ * @param {SpotlightGlassProp} props - The props for the SpotlightGlass component.
+ * @param {React.ReactNode} props.children - The child elements to be rendered inside the wrapper.
+ *
+ * @remarks
+ * - The glass effect size is matched to a hardcoded CSS value (63px).
+ * - The animation is triggered only when the parent width is greater than 0.
+ * - The animation uses a custom sequence of x positions and timing for a smooth effect.
+ * - The component listens to window resize events to recalculate the animation range.
+ */
+
 const SpotlightGlass = ({ children }: SpotlightGlassProp) => {
   const ref = useRef<HTMLDivElement>(null);
   const [parentWidth, setParentWidth] = useState(0);

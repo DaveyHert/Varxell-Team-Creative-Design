@@ -27,6 +27,7 @@ export default function HeroTitle() {
             {width} x {height}
           </div>
         </motion.span>{" "}
+        <span className='break-line' aria-hidden='true' />
         the{" "}
         <div className='animated-word'>
           <AnimatedWord />

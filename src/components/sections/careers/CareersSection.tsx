@@ -1,6 +1,6 @@
 import LinkIcon from "../../../assets/LinkIcon";
 import Button from "../../ui/Button";
-import EllipseCursors from "../../ui/EllipseCursors";
+import EllipseCursors from "../../ui/ellipse-cursors/EllipseCursors";
 import "./CareersSection.css";
 
 const textInfo =
