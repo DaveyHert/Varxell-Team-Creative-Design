@@ -1,7 +1,7 @@
 import { motion } from "motion/react";
 import "./EllipseCursor.css";
-import { teamMembers } from "../../data/data";
-import CursorIcon from "../../assets/CursorIcon";
+import { teamMembers } from "@data/data";
+import CursorIcon from "@assets/CursorIcon";
 
 const NUM_BADGES = 26;
 const radiusX = 420; // Wider horizontally
@@ -11,7 +11,12 @@ const verticalGapHeight = 100; // Target gap between 90-100px
 
 const names = teamMembers.map((user) => user.name.split(" ")[0]);
 
-const badgeColors = [
+type BadgeColor = {
+  bg: string;
+  text: string;
+};
+
+const badgeColors: BadgeColor[] = [
   { bg: "#e2162a", text: "#ededed" }, // red
   { bg: "#006717", text: "#ededed" }, // green
   { bg: "#005be7", text: "#ededed" }, // blue
@@ -39,8 +44,10 @@ const EllipseCursors = () => {
         const delay = Math.random() * 3;
 
         // 🎨 Pick a random color from the palette
-        const { bg, text } =
-          badgeColors[Math.floor(Math.random() * badgeColors.length)];
+        const randomColor = badgeColors[
+          Math.floor(Math.random() * badgeColors.length)
+        ] ?? { bg: "", text: "" };
+        const { bg, text } = randomColor;
 
         return (
           <motion.div
