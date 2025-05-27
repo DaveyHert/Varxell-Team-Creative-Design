@@ -16,7 +16,10 @@ const pathVariants = {
 
 const DesignIconsSet = () => {
   const svgRef = useRef<SVGSVGElement | null>(null);
-  const isInView = useInView(svgRef, { amount: 0.9 });
+  const isMobile = window.innerHeight < 768;
+  const isInView = useInView(svgRef, {
+    amount: isMobile ? 0.1 : 0.8,
+  });
 
   return (
     <svg
