@@ -7,8 +7,8 @@ import LogoIcon from "@assets/LogoIcon";
 
 export default function HeroSection() {
   return (
-    <section className="hero-section" id="Home">
-      <div className="hero-content">
+    <section className='hero-section' id='Home'>
+      <div className='hero-content'>
         <LogoIcon />
         <HeroTitle />
         <HeroSubtitle />

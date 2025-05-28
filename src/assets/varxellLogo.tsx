@@ -1,4 +1,4 @@
-const varxellLogo = () => {
+const VarxellLogo = () => {
   return (
     <svg
       width='49'
@@ -15,4 +15,4 @@ const varxellLogo = () => {
     </svg>
   );
 };
-export default varxellLogo;
+export default VarxellLogo;

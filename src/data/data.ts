@@ -23,7 +23,7 @@ import avatar22 from "../assets/img/avatar-22.jpg";
 
 // card icons
 import DesignIconsSet from "@assets/DesignIconsSet";
-import varxellLogo from "@assets/VarxellLogo";
+import VarxellLogo from "@assets/VarxellLogo";
 import DesignSystemIcon from "@assets/DesignSystemIcon";
 import VarcellIllustration from "@assets/VarcellIllustration";
 
@@ -201,7 +201,7 @@ export const cardsData = [
     content:
       "Learn how we build thoughtful systems and refine our brand assets.",
     illustration: VarcellIllustration,
-    icon: varxellLogo,
+    icon: VarxellLogo,
   },
   {
     title: "Nimble",

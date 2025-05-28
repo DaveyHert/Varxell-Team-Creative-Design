@@ -11,7 +11,7 @@ const navConfig = {
   threshold: 0,
 };
 
-function NavBar() {
+function Navbar() {
   const sentinelRef = useRef<HTMLDivElement | null>(null);
   const navRef = useRef<HTMLDivElement | null>(null);
   const [activeLink, setActiveLink] = useState(navLinks[0]);
@@ -90,4 +90,4 @@ function NavBar() {
     </>
   );
 }
-export default NavBar;
+export default Navbar;
