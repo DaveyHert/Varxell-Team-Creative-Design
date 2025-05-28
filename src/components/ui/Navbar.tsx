@@ -1,8 +1,8 @@
 import { useMemo, useRef, useState } from "react";
-import usePinOnScroll from "@hooks/usePinOnScroll";
+import usePinOnScroll from "@/hooks/usePinOnScroll";
 import { motion } from "motion/react";
 import "./Navbar.css";
-import { useActiveSection } from "@hooks/useActiveSection";
+import { useActiveSection } from "@/hooks/useActiveSection";
 
 const navLinks = ["Home", "Resources", "People", "Career"];
 
@@ -19,6 +19,7 @@ function Navbar() {
   const [isManuallyScrolling, setIsManuallyScrolling] = useState(false);
   const isMobile = window.innerWidth < 768;
 
+  //  only recreate the config if on mobile
   const sectionsConfig = useMemo(
     () => [
       { id: "Home", threshold: 0.2 },

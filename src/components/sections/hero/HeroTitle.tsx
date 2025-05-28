@@ -1,8 +1,8 @@
 import { useRef } from "react";
-import { motion } from "framer-motion";
-import SpotlightGlass from "@components/ui/spotlight-glass/SpotlightGlass";
-import { AnimatedWord } from "@components/ui/animated-word/AnimatedWord";
-import { useElementDimension } from "@hooks/useElementDimension";
+import { motion } from "motion/react";
+import SpotlightGlass from "@/components/ui/spotlight-glass/SpotlightGlass";
+import { AnimatedWord } from "@/components/ui/animated-word/AnimatedWord";
+import { useElementDimension } from "@/hooks/useElementDimension";
 
 export default function HeroTitle() {
   const wordRef = useRef<HTMLElement>(null);

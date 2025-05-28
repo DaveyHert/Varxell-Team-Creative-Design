@@ -1,10 +1,10 @@
 import React, { useRef } from "react";
 import "./TeamSection.css";
-import { useMouseGlowEffect } from "@hooks/useMouseGlowEffect";
-import { sliderTextContent, teamMembers, teamInfoText } from "@data/data";
-import SlidingText from "@components/ui/sliding-text/SlidingText";
+import { useMouseGlowEffect } from "@/hooks/useMouseGlowEffect";
+import { sliderTextContent, teamMembers, teamInfoText } from "@/data/data";
+import SlidingText from "@/components/ui/sliding-text/SlidingText";
 import ProfileCard from "./ProfileCard";
-import GlobeIcon from "@assets/GlobeIcon";
+import GlobeIcon from "@/assets/GlobeIcon";
 
 function TeamSection() {
   const cardContainerRef = useRef<HTMLDivElement | null>(null);

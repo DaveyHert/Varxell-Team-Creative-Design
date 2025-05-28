@@ -1,31 +1,32 @@
-import avatar1 from "../assets/img/avatar-1.jpg";
-import avatar2 from "../assets/img/avatar-2.jpg";
-import avatar3 from "../assets/img/avatar-3.jpg";
-import avatar4 from "../assets/img/avatar-4.jpg";
-import avatar5 from "../assets/img/avatar-5.jpg";
-import avatar6 from "../assets/img/avatar-6.jpg";
-import avatar7 from "../assets/img/avatar-7.jpg";
-import avatar8 from "../assets/img/avatar-8.jpg";
-import avatar9 from "../assets/img/avatar-9.jpg";
-import avatar10 from "../assets/img/avatar-10.jpg";
-import avatar11 from "../assets/img/avatar-11.jpg";
-import avatar12 from "../assets/img/avatar-12.jpg";
-import avatar13 from "../assets/img/avatar-13.jpg";
-import avatar14 from "../assets/img/avatar-14.jpg";
-import avatar15 from "../assets/img/avatar-15.jpg";
-import avatar16 from "../assets/img/avatar-16.jpg";
-import avatar17 from "../assets/img/avatar-17.jpg";
-import avatar18 from "../assets/img/avatar-18.jpg";
-import avatar19 from "../assets/img/avatar-19.jpg";
-import avatar20 from "../assets/img/avatar-20.jpg";
-import avatar21 from "../assets/img/avatar-21.jpg";
-import avatar22 from "../assets/img/avatar-22.jpg";
+import avatar1 from "@/assets/img/avatar-1.jpg";
+import avatar2 from "@/assets/img/avatar-2.jpg";
+import avatar3 from "@/assets/img/avatar-3.jpg";
+import avatar4 from "@/assets/img/avatar-4.jpg";
+import avatar5 from "@/assets/img/avatar-5.jpg";
+import avatar6 from "@/assets/img/avatar-6.jpg";
+import avatar7 from "@/assets/img/avatar-7.jpg";
+import avatar8 from "@/assets/img/avatar-8.jpg";
+import avatar9 from "@/assets/img/avatar-9.jpg";
+import avatar10 from "@/assets/img/avatar-10.jpg";
+import avatar11 from "@/assets/img/avatar-11.jpg";
+import avatar12 from "@/assets/img/avatar-12.jpg";
+import avatar13 from "@/assets/img/avatar-13.jpg";
+import avatar14 from "@/assets/img/avatar-14.jpg";
+import avatar15 from "@/assets/img/avatar-15.jpg";
+import avatar16 from "@/assets/img/avatar-16.jpg";
+import avatar17 from "@/assets/img/avatar-17.jpg";
+import avatar18 from "@/assets/img/avatar-18.jpg";
+import avatar19 from "@/assets/img/avatar-19.jpg";
+import avatar20 from "@/assets/img/avatar-20.jpg";
+import avatar21 from "@/assets/img/avatar-21.jpg";
+import avatar22 from "@/assets/img/avatar-22.jpg";
 
 // card icons
-import DesignIconsSet from "@assets/DesignIconsSet";
-import VarxellLogo from "@assets/VarxellLogo";
-import DesignSystemIcon from "@assets/DesignSystemIcon";
-import VarcellIllustration from "@assets/VarcellIllustration";
+import DesignIconsSet from "@/assets/DesignIconsSet";
+
+import VarxellLogo from "@/assets/VarxellLogo";
+import DesignSystemIcon from "@/assets/DesignSystemIcon";
+import VarcellIllustration from "@/assets/VarcellIllustration";
 
 export const teamMembers = [
   {

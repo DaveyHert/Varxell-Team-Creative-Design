@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState, type ReactNode } from "react";
 import "./SpotlightGlass.css";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 
 interface SpotlightGlassProp {
   children: ReactNode;

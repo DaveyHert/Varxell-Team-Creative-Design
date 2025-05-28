@@ -19,17 +19,13 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noUncheckedIndexedAccess": true,
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true,
 
     /* custom path alias */
-    "baseUrl": "src",
+    "baseUrl": ".",
     "paths": {
-      "@hooks/*": ["hooks/*"],
-      "@components/*": ["components/*"],
-      "@assets/*": ["assets/*"],
-      "@data/*": ["data/*"]
+      "@/*": ["./src/*"]
     }
   },
   "include": ["src"]

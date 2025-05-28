@@ -65,11 +65,15 @@
   font-weight: 600;
   letter-spacing: -2px;
   font-size: clamp(28px, 5vw, 52px);
-  line-height: clamp(1.1, 2vw, 1.9);
+  line-height: 72px;
   text-align: center;
   color: var(--main-text-color);
   margin-bottom: 30px;
   white-space: nowrap;
+
+  @media only screen and (max-width: 768px) {
+    line-height: 48px;
+  }
 
   .word-squeeze {
     display: inline-flex;

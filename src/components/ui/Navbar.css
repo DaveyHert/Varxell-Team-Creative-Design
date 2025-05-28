@@ -19,7 +19,6 @@
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 2px;
   padding: 4px;
 
   .nav-link {
@@ -40,6 +39,10 @@
       border-radius: inherit;
       z-index: 10;
       position: relative;
+
+      @media only screen and (max-width: 768px) {
+        padding: 10px 14px;
+      }
 
       &:has(+ .active-link),
       &:hover {

@@ -1,7 +1,7 @@
 import { motion } from "motion/react";
 import "./EllipseCursor.css";
-import { teamMembers } from "@data/data";
-import CursorIcon from "@assets/CursorIcon";
+import { teamMembers } from "@/data/data";
+import CursorIcon from "@/assets/CursorIcon";
 
 const NUM_BADGES = 26;
 const radiusX = 420; // Wider horizontally

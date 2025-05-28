@@ -1,9 +1,9 @@
 import "./ResourcesSection.css";
-import ResourceStars from "@assets/ResourceStars";
-import { cardsData, resourcesInfoText } from "@data/data";
-import LoveIcon from "@assets/LoveIcon";
-import WaterPlantIcon from "@assets/WaterPlantIcon";
-import ShootingStar from "@components/ui/shooting-star/ShootingStar";
+import ResourceStars from "@/assets/ResourceStars";
+import { cardsData, resourcesInfoText } from "@/data/data";
+import LoveIcon from "@/assets/LoveIcon";
+import WaterPlantIcon from "@/assets/WaterPlantIcon";
+import ShootingStar from "@/components/ui/shooting-star/ShootingStar";
 
 function ResourcesSection() {
   return (
