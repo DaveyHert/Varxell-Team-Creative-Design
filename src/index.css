@@ -148,7 +148,7 @@ html {
   }
 }
 
-/* WebKit Browsers (Chrome, Edge, Safari) */
+/* WebKit Browsers (Chrome, Edge, Safari)*/
 ::-webkit-scrollbar {
   width: 12px;
 }
