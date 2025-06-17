@@ -44,7 +44,7 @@ function Navbar() {
     }, 1000);
   };
 
-  // useActiveSection(handleNavSelect);
+  // handleNavSelect;
   useActiveSection(setActiveLink, sectionsConfig, isManuallyScrolling);
 
   return (
@@ -85,7 +85,9 @@ function Navbar() {
         <div
           aria-hidden='true'
           className='navbar-placeholder'
-          style={{ height: navRef.current?.offsetHeight || 0 }}
+          style={{
+            height: navRef.current?.offsetHeight || 0,
+          }}
         />
       )}
     </>
