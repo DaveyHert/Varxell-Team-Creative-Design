@@ -3,11 +3,12 @@ import "./EllipseCursor.css";
 import { teamMembers } from "@/data/data";
 import CursorIcon from "@/assets/CursorIcon";
 
-const NUM_BADGES = 26;
-const radiusX = 420; // Wider horizontally
-const radiusY = 200; // Closer vertically
+// CONFIG
+const NUM_BADGES = 26; // number of badges
+const radiusX = 420; // wider horizontally
+const radiusY = 200; // closer vertically
 
-const verticalGapHeight = 100; // Target gap between 90-100px
+const verticalGapHeight = 100; //  target gap height between left-right badges 90-100px
 
 const names = teamMembers.map((user) => user.name.split(" ")[0]);
 
@@ -26,7 +27,11 @@ const badgeColors: BadgeColor[] = [
   { bg: "#ff9300", text: "#000000" }, // orange (use black text for contrast)
 ];
 
-const EllipseCursors = () => {
+type Props = {
+  shouldAnimate: boolean; // only when section is in view
+};
+
+const EllipseCursors = ({ shouldAnimate }: Props) => {
   return (
     <div className='ellipse-overlay'>
       {Array.from({ length: NUM_BADGES }).map((_, i) => {
@@ -35,19 +40,18 @@ const EllipseCursors = () => {
         const y = Math.sin(angle) * radiusY;
 
         if (Math.abs(x) < verticalGapHeight / 2) return null;
-
         const isLeftSide = x < 0;
 
-        // Slower, smoother floating values
-        const floatXY = Math.random() * 5 + 10; // 4 to 14px
-        const duration = Math.random() * 2 + 4; // 6 to 10s (slower)
-        const delay = Math.random() * 3;
+        // ⏲️ Slower, smoother floating transition
+        const floatXY = Math.random() * 5 + 10; // 10 to 15px
+        const floatDuration = Math.random() * 2 + 4; // 4 to 6s (slower)
+        const floatDelay = Math.random() * 3; // random float delay between 0-3s
 
         // 🎨 Pick a random color from the palette
-        const randomColor = badgeColors[
-          Math.floor(Math.random() * badgeColors.length)
-        ] ?? { bg: "", text: "" };
-        const { bg, text } = randomColor;
+        const { bg, text } =
+          badgeColors[Math.floor(Math.random() * badgeColors.length)];
+
+        const entranceDelay = Math.random() * 1.5;
 
         return (
           <motion.div
@@ -57,33 +61,45 @@ const EllipseCursors = () => {
               left: `calc(50% + ${x}px)`,
               top: `calc(50% + ${y}px)`,
             }}
-            animate={{
-              x: [0, floatXY, 0],
-              y: [0, floatXY, 0],
-            }}
+            initial={{ opacity: 0, y: 30 }}
+            animate={
+              shouldAnimate ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 } // stay hidden before scroll
+            }
             transition={{
-              duration,
-              repeat: Infinity,
-              repeatType: "loop",
-              ease: "easeInOut",
-              delay,
+              duration: 0.5,
+              ease: "easeOut",
+              delay: entranceDelay,
             }}
           >
-            <div className='badge-content'>
-              <span
-                className='badge-text'
-                style={{ background: bg, color: text }}
-              >
-                {names[i % names.length]}
-              </span>
-              <span
-                className={`cursor-icon-absolute ${
-                  isLeftSide ? "left-side" : "right-side"
-                }`}
-              >
-                <CursorIcon color={bg} />
-              </span>
-            </div>
+            <motion.div
+              animate={{
+                x: [0, floatXY, 0],
+                y: [0, floatXY, 0],
+              }}
+              transition={{
+                duration: floatDuration,
+                repeat: Infinity,
+                repeatType: "loop",
+                ease: "easeInOut",
+                delay: floatDelay,
+              }}
+            >
+              <div className='badge-content'>
+                <span
+                  className='badge-text'
+                  style={{ background: bg, color: text }}
+                >
+                  {names[i % names.length]}
+                </span>
+                <span
+                  className={`cursor-icon-absolute ${
+                    isLeftSide ? "left-side" : "right-side"
+                  }`}
+                >
+                  <CursorIcon color={bg} />
+                </span>
+              </div>
+            </motion.div>
           </motion.div>
         );
       })}
