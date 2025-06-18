@@ -8,13 +8,13 @@
 }
     @keyframes fadeIn2 {
   to {
-    opacity: .5;
+    opacity: .4;
     filter: blur(0px);
   }
 }
     @keyframes fadeIn3 {
   to {
-    opacity: .4;
+    opacity: .3;
     filter: blur(0px);
   }
 }
@@ -47,12 +47,12 @@
   <g id="Frame 1" clip-path="url(#clip0_195_24)">
     <path id="bg-frame" d="M0 0H1440V950.024H0V0Z" fill="url(#paint0_radial_195_24)" fill-opacity="0.5"/>
     <g id="ring-set">
-      <g class="ring 4th-set" style="animation-delay: 1.1s;">
+      <g class="ring 4th-set" style="animation-delay: 1s;">
         <circle id="5th ring" cx="720" cy="545.861" r="536" stroke="url(#paint1_linear_195_24)" stroke-opacity="0.1"/>
       </g>
       <g class="ring 3rd-set" style="animation-delay: 1s;">
         <circle id="ring" cx="720" cy="542.375" r="429" fill="black" fill-opacity="0.1" stroke="url(#paint2_linear_195_24)" stroke-opacity="0.12"/>
-        <g class="star 6" id="star6" opacity="0.4" style="animation-delay: 7.38s;">
+        <g class="star 6" id="star6" opacity="0.4" style="animation-delay: 8.38s;">
           <g id="Rectangle 63">
             <rect x="363.806" y="288.875" width="1.1" height="23" transform="rotate(-8.42745 363.806 288.875)" fill="url(#paint3_linear_195_24)"/>
             <rect x="364.118" y="289.107" width="0.55" height="22.45" transform="rotate(-8.42745 364.118 289.107)" stroke="url(#paint4_linear_195_24)" stroke-opacity="0.12" stroke-width="0.55"/>
@@ -66,7 +66,7 @@
             <circle cx="366.035" cy="300.17" r="0.6" transform="rotate(-14.7122 366.035 300.17)" stroke="url(#paint8_linear_195_24)" stroke-opacity="0.12"/>
           </g>
         </g>
-        <g class="star 7" id="star7" opacity="0.4" style="animation-delay: 7.58s;">
+        <g class="star 7" id="star7" opacity="0.4" style="animation-delay: 8.48s;">
           <g id="Rectangle 63_2">
             <rect x="964.456" y="200.405" width="1.1" height="23" transform="rotate(-100.621 964.456 200.405)" fill="url(#paint9_linear_195_24)"/>
             <rect x="964.676" y="200.084" width="0.55" height="22.45" transform="rotate(-100.621 964.676 200.084)" stroke="url(#paint10_linear_195_24)" stroke-opacity="0.12" stroke-width="0.55"/>
@@ -81,7 +81,7 @@
           </g>
         </g>
       </g>
-      <g class="ring 2nd-set" style="animation-delay: .8s;">
+      <g class="ring 2nd-set" style="animation-delay: 1s;">
         <circle id="ring_2" cx="720" cy="542.375" r="322" stroke="url(#paint15_linear_195_24)" stroke-opacity="0.2"/>
         <g class="star 5" id="star5" opacity="0.6" style="animation-delay: .98s;">
           <rect id="Rectangle 63_3" x="675.921" y="213.838" width="1.1" height="23" transform="rotate(30.315 675.921 213.838)" fill="url(#paint16_linear_195_24)"/>

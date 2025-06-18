@@ -57,10 +57,10 @@ const SpotlightGlass = ({ children }: SpotlightGlassProp) => {
             ],
           }}
           transition={{
-            duration: 6,
+            duration: 4.5,
             ease: "easeInOut",
-            times: [0, 0.24, 0.26, 0.5, 0.7],
-            delay: 3,
+            times: [0, 0.24, 0.26, 0.5, 0.62],
+            delay: 5.5,
             repeat: 0,
           }}
         />

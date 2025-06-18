@@ -22,7 +22,7 @@ export const AnimatedWord = () => {
       });
 
       // Wait before starting ripple
-      await new Promise((resolve) => setTimeout(resolve, 8000));
+      await new Promise((resolve) => setTimeout(resolve, 3000));
 
       // Phase 2: Ripple effect (dash offset animates), fill animates in
       await controls.start({
@@ -38,7 +38,7 @@ export const AnimatedWord = () => {
       });
 
       // Wait before final phase
-      await new Promise((resolve) => setTimeout(resolve, 800));
+      await new Promise((resolve) => setTimeout(resolve, 100));
 
       // Phase 3: Solid stroke, fade out fill
       await controls.start({
@@ -47,7 +47,7 @@ export const AnimatedWord = () => {
         fill: "rgba(255,255,255,0)",
         opacity: 0.7,
         transition: {
-          duration: 1.2,
+          duration: 1,
           ease: "easeInOut",
         },
       });

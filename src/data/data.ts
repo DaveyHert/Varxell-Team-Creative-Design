@@ -136,7 +136,7 @@ export const teamMembers = [
   },
   {
     avatar: avatar7,
-    name: "Benjamin Martin",
+    name: "Rita Martin",
     xHandle: "@benjaminmartin",
     country: "Nigeria",
     role: "UI Designer",
@@ -164,8 +164,8 @@ export const teamMembers = [
   },
   {
     avatar: avatar21,
-    name: "Mason Brooks",
-    xHandle: "@masonbrooks",
+    name: "Olivia Brooks",
+    xHandle: "@oliviabrooks",
     country: "Portugal",
     role: "Back-end Engineer",
   },
