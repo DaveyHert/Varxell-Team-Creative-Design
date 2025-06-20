@@ -2,7 +2,7 @@
 
 ![Landing Page Screenshot](public/screenshot.png)
 
-A visually-rich, interactive landing page for a Varxell Team, showcasing creative talent, resources, and open career opportunities. Built with React, TypeScript, Vite, and Framer Motion for smooth, modern animations.
+A visually-rich, interactive landing page for a fictional Varxell Team, showcasing creative talent, resources, and open career opportunities. Built with React, TypeScript, Vite, and Framer Motion for smooth, modern animations.
 
 ---
 
@@ -40,22 +40,19 @@ A visually-rich, interactive landing page for a Varxell Team, showcasing creativ
 - **Sliding Text:**
   - Animated greetings in multiple languages.
 - **Profile Cards:**
-  - Team member cards with mouse-tracking radial glow effect.
-  - Avatar images, roles, and social handles.
-- **Globe Icon:**
-  - Animated SVG globe for international flair.
+  - Team member cards with mouse-tracking radial glow effect that is isolated in the cards.
 
 ### Careers Section
 
 - **Join Us Call-to-Action:**
-  - Animated button with icon.
+  - Animated call to action button.
 - **Ellipse Cursors:**
-  - Animated floating badges with team member names and cursor icons, orbiting in an ellipse with random colors and motion.
+  - Animated floating badges with team member names and cursor icons, orbiting in an ellipse with random color preset on every render and motion.
 
 ### Footer
 
 - **Animated Logo Reveal:**
-  - SVG logo with animated outline and gradient fill, see-sawing with mouse movement.
+  - SVG logo with drawn animated outline and animated gradient fill, with a see-saw mouse tracking movement.
 
 ---
 
@@ -70,7 +67,7 @@ A visually-rich, interactive landing page for a Varxell Team, showcasing creativ
 - **React** (with TypeScript)
 - **Vite** (for fast development & build)
 - **Framer Motion** (`motion/react`) for all animations
-- **CSS Modules** and custom CSS for styling and effects
+- **Vanilla CSS** custom CSS for styling and effects
 - **SVG** for icons, illustrations, and animated graphics
 
 ---
@@ -119,19 +116,3 @@ A visually-rich, interactive landing page for a Varxell Team, showcasing creativ
 - **Animated SVG paths** for logo and decorative elements.
 - **Randomized floating cursors** in the careers section.
 - **Responsive design** for all screen sizes.
-
----
-
-## 📸 Add Your Own Screenshot
-
-Replace `public/screenshot.png` with your own screenshot for best results.
-
----
-
-## 📝 License
-
-MIT
-
----
-
-Enjoy exploring the creative features and smooth animations of the Varxell Team landing page!
