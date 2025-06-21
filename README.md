@@ -2,7 +2,12 @@
 
 ![Landing Page Screenshot](public/screenshot.png)
 
+
 A visually-rich, interactive landing page for a fictional Varxell Team, showcasing creative talent, resources, and open career opportunities. Built with React, TypeScript, Vite, and Framer Motion for smooth, modern animations.
+
+#### Live site:
+[Vercel Link](https://varxell-team.vercel.app/)
+[Netlify Link](https://varxell.netlify.app/)
 
 ---
 
